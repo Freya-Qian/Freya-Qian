@@ -4,11 +4,11 @@
 
 <p align="center"><sub>Click the terminal to open my GitHub workspace</sub></p>
 
-I moved from embedded systems into AI product work.
-I build and study AI products.
-I care about agents, model evaluation, and the path from impressive demos to useful products.
-Engineering is not the destination for me.
-It is the lens I use to understand systems and make better product decisions.
+Focused on turning large model capabilities into sustainable user value.
+When evaluating an AI direction, the signal is not how impressive the demo looks, but the reality of the scenario, willingness to pay, and technical boundaries.
+I use evidence and hypotheses to turn ambiguous technical possibilities into testable, reversible, and iterative product paths.
+Technology is not the destination.
+It is the lens for understanding systems, evaluating opportunities, and making better product decisions.
 
 🌐 Website coming soon · 📕 [Xiaohongshu](https://www.xiaohongshu.com/user/profile/5bcaaa97bb750a0001177fc1) · ✉️ [Email](mailto:1105qianhao@gmail.com)
 
