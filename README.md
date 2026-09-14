@@ -2,8 +2,6 @@
 
 [![Launch Freya AI Lab](https://raw.githubusercontent.com/Freya-Qian/Freya-Qian/main/assets/profile-launch.svg)](https://github.com/Freya-Qian)
 
-<p align="center"><sub>Click the terminal to open my GitHub workspace</sub></p>
-
 Focused on turning large model capabilities into sustainable user value.
 
 When evaluating an AI direction, the signal is not how impressive the demo looks, but the reality of the scenario, willingness to pay, and technical boundaries.
