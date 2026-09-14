@@ -36,7 +36,7 @@ I write about AI products through an engineering and product lens.
 
 ---
 
-### [一个 Agent 能不能用，不看它有多聪明，要看它犯错后谁倒霉](https://mp.weixin.qq.com/s/0JuTnlmf1bpT2sETI3f_XQ)
+### 一个 Agent 能不能用，不看它有多聪明，要看它犯错后谁倒霉
 
 <sub>Agent · AI Product</sub>
 
@@ -46,7 +46,7 @@ I write about AI products through an engineering and product lens.
 
 ---
 
-### [一部短剧没有演员，评论区却多了一群失恋的人](https://mp.weixin.qq.com/s/wNzVAq1kCvWNYwG3C6dSLA)
+### 一部短剧没有演员，评论区却多了一群失恋的人
 
 <sub>AI Content · User Emotion</sub>
 
@@ -56,7 +56,7 @@ I write about AI products through an engineering and product lens.
 
 ---
 
-### [24小时订单260万美元，具身智能最先卖爆的产品，长成了一只鸭子](https://mp.weixin.qq.com/s/n7dILeLOh610bJsTMeYtWQ)
+### 24小时订单260万美元，具身智能最先卖爆的产品，长成了一只鸭子
 
 <sub>Embodied AI · Consumer Product</sub>
 
@@ -66,7 +66,7 @@ I write about AI products through an engineering and product lens.
 
 ---
 
-### [基础单价没降，Agent任务成本为什么最多能降约45%](https://mp.weixin.qq.com/s/ANJtmf88fnIrBhuBT-K82w)
+### 基础单价没降，Agent任务成本为什么最多能降约45%
 
 <sub>Agent Cost · Workflow Design</sub>
 
@@ -76,7 +76,7 @@ I write about AI products through an engineering and product lens.
 
 ---
 
-### [Grok Bot最反常的设计，一队AI员工共用一台电脑](https://mp.weixin.qq.com/s/MUb2FaiS8fHlhU99ytRrEg)
+### Grok Bot最反常的设计，一队AI员工共用一台电脑
 
 <sub>Computer Use · Multi-Agent</sub>
 
@@ -86,7 +86,7 @@ I write about AI products through an engineering and product lens.
 
 ---
 
-### [榜单第一离可用Agent还有多远，拆开MiniCPM5-2B的成绩单](https://mp.weixin.qq.com/s/hfm_cyNzX1CWl0q0yaS3dw)
+### 榜单第一离可用Agent还有多远，拆开MiniCPM5-2B的成绩单
 
 <sub>Evaluation · Agent Usability</sub>
 
@@ -96,7 +96,7 @@ I write about AI products through an engineering and product lens.
 
 ---
 
-### [多数Agent测试超过V4 Pro，DeepSeek V4.1 Flash赢在模型还是脚手架](https://mp.weixin.qq.com/s/HCUtDnsF9qYlFZ84eY2gvQ)
+### 多数Agent测试超过V4 Pro，DeepSeek V4.1 Flash赢在模型还是脚手架
 
 <sub>Benchmark · Product System</sub>
 
@@ -106,7 +106,7 @@ I write about AI products through an engineering and product lens.
 
 ---
 
-### [AI提高效率以后，轻松为什么没有分到你手里](https://mp.weixin.qq.com/s/oc6y7H90HRNO9cjHAzPcIw)
+### AI提高效率以后，轻松为什么没有分到你手里
 
 <sub>Productivity · Work Design</sub>
 
