@@ -14,7 +14,7 @@ Technology is not the destination.
 
 It is the lens for understanding systems, evaluating opportunities, and making better product decisions.
 
-🌐 Website coming soon · 📕 [Xiaohongshu](https://www.xiaohongshu.com/user/profile/5bcaaa97bb750a0001177fc1) · ✉️ [Email](mailto:1105qianhao@gmail.com)
+🌐 [Website](https://freya-qian.github.io/) · 📕 [Xiaohongshu](https://www.xiaohongshu.com/user/profile/5bcaaa97bb750a0001177fc1) · ✉️ [Email](mailto:1105qianhao@gmail.com)
 
 ---
 
