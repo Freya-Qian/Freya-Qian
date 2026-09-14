@@ -1,31 +1,34 @@
 # Hi, I'm Freya Qian
 
-AI Builder | Project Manager with an Embedded Systems Background | Focused on AI Products
+[![Launch Freya AI Lab](https://raw.githubusercontent.com/Freya-Qian/Freya-Qian/main/assets/profile-launch.svg)](https://github.com/Freya-Qian)
 
-I build and explore AI products from both product and engineering perspectives.  
-With a background in embedded systems, I care about how technical capabilities move from demos into real-world products.  
-My current focus is on AI product design, agent workflows, model evaluation, and practical AI applications.  
-I write about how AI systems are built, where they fail, and what it takes to make them useful for real users.
+<p align="center"><sub>Click the terminal to open my GitHub workspace</sub></p>
 
-Website: Coming soon  
-Xiaohongshu: https://www.xiaohongshu.com/user/profile/5bcaaa97bb750a0001177fc1  
-Email: 1105qianhao@gmail.com
+I moved from embedded systems into AI product work.
+I build and study AI products.
+I care about agents, model evaluation, and the path from impressive demos to useful products.
+Engineering is not the destination for me.
+It is the lens I use to understand systems and make better product decisions.
 
----
-
-## Featured Project
-
-### MotoViz
-
-MotoViz is an AI product exploration project focused on motorcycle-related scenarios, combining product thinking, AI workflows, and practical user experience design.
-
-Project link: https://github.com/MN0709/MotoViz
+🌐 Website coming soon · 📕 [Xiaohongshu](https://www.xiaohongshu.com/user/profile/5bcaaa97bb750a0001177fc1) · ✉️ [Email](mailto:1105qianhao@gmail.com)
 
 ---
 
-## Writing
+## ⭐ Featured projects
 
-I write about AI products, agents, model evaluation, and the ways emerging AI capabilities become real user-facing products.
+Products and tools built through an AI product lens.
+
+🏍️ [**MotoViz**](https://github.com/MN0709/MotoViz)  
+An AI product exploration project for motorcycle-related scenarios.  
+Combines product thinking, AI workflows, and practical user experience design.
+
+More projects coming soon.
+
+---
+
+## ✍️ Writing
+
+I write about AI products through an engineering and product lens.
 
 - [一个 Agent 能不能用，不看它有多聪明，要看它犯错后谁倒霉](https://mp.weixin.qq.com/s/0JuTnlmf1bpT2sETI3f_XQ)
 - [一部短剧没有演员，评论区却多了一群失恋的人](https://mp.weixin.qq.com/s/wNzVAq1kCvWNYwG3C6dSLA)
@@ -42,6 +45,8 @@ I write about AI products, agents, model evaluation, and the ways emerging AI ca
 
 - 中文名：钱皓
 - English name: Freya Qian
-- AI product builder
-- Project manager with an embedded systems background
+- AI Builder
+- Project Manager with an embedded systems background
 - Focused on AI products, agent workflows, and productizing emerging AI capabilities
+
+---

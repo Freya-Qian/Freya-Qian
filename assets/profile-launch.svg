@@ -1,0 +1,37 @@
+<svg width="960" height="360" viewBox="0 0 960 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Freya AI Lab</title>
+  <desc id="desc">A terminal-inspired profile banner for Freya Qian, focused on AI products, agents, and product systems.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#101820"/>
+      <stop offset="0.52" stop-color="#17212B"/>
+      <stop offset="1" stop-color="#20312F"/>
+    </linearGradient>
+    <linearGradient id="line" x1="102" y1="115" x2="858" y2="115" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6EE7B7"/>
+      <stop offset="0.55" stop-color="#93C5FD"/>
+      <stop offset="1" stop-color="#FDE68A"/>
+    </linearGradient>
+    <filter id="shadow" x="52" y="34" width="856" height="292" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="960" height="360" rx="28" fill="url(#bg)"/>
+  <g opacity="0.28">
+    <path d="M110 298C221 226 307 324 421 250C546 169 615 261 731 182C795 139 838 145 898 160" stroke="#9FE7D5" stroke-width="2"/>
+    <path d="M62 78C168 130 243 49 350 104C479 170 555 71 672 123C768 166 810 87 908 116" stroke="#FDE68A" stroke-width="2"/>
+  </g>
+  <g filter="url(#shadow)">
+    <rect x="78" y="58" width="804" height="244" rx="18" fill="#0B1117" stroke="#27313B"/>
+    <rect x="78" y="58" width="804" height="46" rx="18" fill="#111A22"/>
+    <path d="M78 86C78 70.536 90.536 58 106 58H854C869.464 58 882 70.536 882 86V104H78V86Z" fill="#111A22"/>
+    <circle cx="111" cy="82" r="7" fill="#F87171"/>
+    <circle cx="135" cy="82" r="7" fill="#FBBF24"/>
+    <circle cx="159" cy="82" r="7" fill="#34D399"/>
+    <rect x="102" y="123" width="756" height="2" fill="url(#line)"/>
+    <text x="102" y="161" fill="#6EE7B7" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" font-size="18">$ launch freya-ai-lab</text>
+    <text x="102" y="200" fill="#E5EEF5" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700">Freya Qian</text>
+    <text x="102" y="235" fill="#B8C4CE" font-family="Inter, Arial, sans-serif" font-size="21">AI Builder · Embedded Systems Background · AI Product Focus</text>
+    <text x="102" y="270" fill="#FDE68A" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" font-size="16">agents / evaluation / product systems / real-world AI</text>
+  </g>
+</svg>
