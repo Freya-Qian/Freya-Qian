@@ -131,14 +131,12 @@
     <rect class="pixel" x="134" y="202" width="72" height="22" fill="#E94436"/>
     <rect class="pixel" x="150" y="180" width="48" height="24" fill="#FFD58A"/>
     <rect class="pixel" x="142" y="166" width="62" height="16" fill="#E94436"/>
-    <rect class="pixel" x="154" y="204" width="18" height="34" fill="#2D6CDF"/>
-    <rect class="pixel" x="186" y="204" width="18" height="24" fill="#2D6CDF"/>
-    <rect class="pixel" x="204" y="218" width="24" height="16" fill="#2D6CDF"/>
-    <rect class="pixel" x="146" y="238" width="30" height="12" fill="#683B1D"/>
-    <rect class="pixel" x="222" y="226" width="24" height="12" fill="#683B1D"/>
-    <rect class="pixel" x="124" y="210" width="16" height="24" fill="#FFD58A"/>
-    <rect class="pixel" x="206" y="188" width="16" height="26" fill="#FFD58A"/>
-    <rect class="pixel" x="222" y="188" width="16" height="14" fill="#FFD58A"/>
+    <rect class="pixel" x="158" y="204" width="18" height="36" fill="#2D6CDF"/>
+    <rect class="pixel" x="184" y="204" width="18" height="36" fill="#2D6CDF"/>
+    <rect class="pixel" x="148" y="240" width="28" height="12" fill="#683B1D"/>
+    <rect class="pixel" x="184" y="240" width="28" height="12" fill="#683B1D"/>
+    <rect class="pixel" x="130" y="206" width="16" height="28" fill="#FFD58A"/>
+    <rect class="pixel" x="206" y="190" width="16" height="38" fill="#FFD58A"/>
     <rect class="pixel" x="164" y="188" width="8" height="8" fill="#111820"/>
     <rect class="pixel" x="188" y="188" width="8" height="8" fill="#111820"/>
     <rect class="pixel" x="174" y="198" width="18" height="5" fill="#8A4024"/>
