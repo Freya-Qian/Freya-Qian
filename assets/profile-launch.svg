@@ -1,37 +1,137 @@
 <svg width="960" height="360" viewBox="0 0 960 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Freya AI Lab</title>
-  <desc id="desc">A terminal-inspired profile banner for Freya Qian, focused on AI products, agents, and product systems.</desc>
+  <desc id="desc">An animated 8-bit platform profile banner for Freya Qian, focused on AI products, agents, and real-world systems.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="960" y2="360" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#101820"/>
-      <stop offset="0.52" stop-color="#17212B"/>
-      <stop offset="1" stop-color="#20312F"/>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#6EC6FF"/>
+      <stop offset="0.58" stop-color="#A7E8FF"/>
+      <stop offset="1" stop-color="#D7F7FF"/>
     </linearGradient>
-    <linearGradient id="line" x1="102" y1="115" x2="858" y2="115" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#6EE7B7"/>
-      <stop offset="0.55" stop-color="#93C5FD"/>
-      <stop offset="1" stop-color="#FDE68A"/>
-    </linearGradient>
-    <filter id="shadow" x="52" y="34" width="856" height="292" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-      <feDropShadow dx="0" dy="18" stdDeviation="24" flood-color="#000000" flood-opacity="0.35"/>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#1C3550" flood-opacity="0.22"/>
     </filter>
+    <style>
+      .pixel { shape-rendering: crispEdges; }
+      .mono { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; }
+      .sans { font-family: Inter, Arial, sans-serif; }
+      .jumper {
+        animation: jump 1.35s cubic-bezier(.34,.05,.2,1) infinite;
+        transform-origin: 186px 246px;
+      }
+      .coin-a { animation: coinHop 1.35s ease-in-out infinite; }
+      .coin-b { animation: coinHop 1.35s ease-in-out .18s infinite; }
+      .coin-c { animation: coinHop 1.35s ease-in-out .34s infinite; }
+      .block-pop { animation: blockPop 1.35s ease-in-out infinite; }
+      .clouds { animation: drift 16s linear infinite; }
+      .blink { animation: blink 1.1s steps(2, jump-none) infinite; }
+      @keyframes jump {
+        0%, 100% { transform: translateY(0); }
+        38% { transform: translateY(-74px); }
+        56% { transform: translateY(-70px); }
+      }
+      @keyframes coinHop {
+        0%, 100% { transform: translateY(0); opacity: .95; }
+        42% { transform: translateY(-18px); opacity: 1; }
+      }
+      @keyframes blockPop {
+        0%, 35%, 100% { transform: translateY(0); }
+        44%, 58% { transform: translateY(-7px); }
+      }
+      @keyframes drift {
+        from { transform: translateX(-70px); }
+        to { transform: translateX(70px); }
+      }
+      @keyframes blink {
+        0%, 45% { opacity: 1; }
+        46%, 100% { opacity: 0; }
+      }
+    </style>
   </defs>
-  <rect width="960" height="360" rx="28" fill="url(#bg)"/>
-  <g opacity="0.28">
-    <path d="M110 298C221 226 307 324 421 250C546 169 615 261 731 182C795 139 838 145 898 160" stroke="#9FE7D5" stroke-width="2"/>
-    <path d="M62 78C168 130 243 49 350 104C479 170 555 71 672 123C768 166 810 87 908 116" stroke="#FDE68A" stroke-width="2"/>
+
+  <rect width="960" height="360" rx="28" fill="url(#sky)"/>
+
+  <g class="clouds" opacity="0.94">
+    <g transform="translate(82 58)">
+      <rect class="pixel" x="16" y="16" width="64" height="24" rx="12" fill="#FFFFFF"/>
+      <rect class="pixel" x="0" y="30" width="108" height="24" rx="12" fill="#FFFFFF"/>
+      <rect class="pixel" x="40" y="0" width="42" height="42" rx="21" fill="#FFFFFF"/>
+    </g>
+    <g transform="translate(746 42)">
+      <rect class="pixel" x="18" y="18" width="66" height="24" rx="12" fill="#FFFFFF"/>
+      <rect class="pixel" x="0" y="33" width="116" height="24" rx="12" fill="#FFFFFF"/>
+      <rect class="pixel" x="44" y="2" width="44" height="44" rx="22" fill="#FFFFFF"/>
+    </g>
   </g>
-  <g filter="url(#shadow)">
-    <rect x="78" y="58" width="804" height="244" rx="18" fill="#0B1117" stroke="#27313B"/>
-    <rect x="78" y="58" width="804" height="46" rx="18" fill="#111A22"/>
-    <path d="M78 86C78 70.536 90.536 58 106 58H854C869.464 58 882 70.536 882 86V104H78V86Z" fill="#111A22"/>
-    <circle cx="111" cy="82" r="7" fill="#F87171"/>
-    <circle cx="135" cy="82" r="7" fill="#FBBF24"/>
-    <circle cx="159" cy="82" r="7" fill="#34D399"/>
-    <rect x="102" y="123" width="756" height="2" fill="url(#line)"/>
-    <text x="102" y="161" fill="#6EE7B7" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" font-size="18">$ launch freya-ai-lab</text>
-    <text x="102" y="200" fill="#E5EEF5" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700">Freya Qian</text>
-    <text x="102" y="235" fill="#B8C4CE" font-family="Inter, Arial, sans-serif" font-size="21">AI Builder · Embedded Systems Background · AI Product Focus</text>
-    <text x="102" y="270" fill="#FDE68A" font-family="SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace" font-size="16">agents / evaluation / product systems / real-world AI</text>
+
+  <g filter="url(#softShadow)">
+    <rect class="pixel" x="72" y="74" width="816" height="214" rx="18" fill="#101820" stroke="#23384A" stroke-width="4"/>
+    <rect class="pixel" x="72" y="74" width="816" height="42" rx="18" fill="#172434"/>
+    <circle cx="107" cy="95" r="7" fill="#FF6262"/>
+    <circle cx="131" cy="95" r="7" fill="#FFC83D"/>
+    <circle cx="155" cy="95" r="7" fill="#39D98A"/>
+
+    <text x="228" y="159" class="mono" fill="#7EF7C8" font-size="18">$ start freya-world</text>
+    <text x="228" y="202" class="sans" fill="#F7FAFC" font-size="42" font-weight="800">Freya Qian</text>
+    <text x="228" y="236" class="sans" fill="#C8D5DF" font-size="21">AI Builder · Embedded Systems Background · AI Product Focus</text>
+    <text x="228" y="268" class="mono" fill="#FFE66D" font-size="16">agents / evaluation / product systems / real-world AI</text>
+    <rect class="blink" x="848" y="252" width="10" height="20" fill="#7EF7C8"/>
+  </g>
+
+  <g transform="translate(646 136)">
+    <g class="block-pop">
+      <rect class="pixel" x="0" y="0" width="44" height="44" fill="#F4A92B"/>
+      <rect class="pixel" x="6" y="6" width="32" height="32" fill="#FFD45A"/>
+      <text x="14" y="31" class="mono" fill="#8B4B13" font-size="28" font-weight="800">?</text>
+    </g>
+    <rect class="pixel" x="52" y="0" width="44" height="44" fill="#A65F2B"/>
+    <rect class="pixel" x="58" y="6" width="32" height="12" fill="#C87938"/>
+    <rect class="pixel" x="58" y="24" width="32" height="12" fill="#C87938"/>
+    <rect class="pixel" x="104" y="0" width="44" height="44" fill="#A65F2B"/>
+    <rect class="pixel" x="110" y="6" width="32" height="12" fill="#C87938"/>
+    <rect class="pixel" x="110" y="24" width="32" height="12" fill="#C87938"/>
+  </g>
+
+  <g class="coin-a" transform="translate(660 93)">
+    <ellipse cx="14" cy="18" rx="12" ry="16" fill="#FFE66D" stroke="#C68B17" stroke-width="4"/>
+    <rect class="pixel" x="12" y="7" width="4" height="22" fill="#FFF4A3"/>
+  </g>
+  <g class="coin-b" transform="translate(726 90)">
+    <ellipse cx="14" cy="18" rx="12" ry="16" fill="#FFE66D" stroke="#C68B17" stroke-width="4"/>
+    <rect class="pixel" x="12" y="7" width="4" height="22" fill="#FFF4A3"/>
+  </g>
+  <g class="coin-c" transform="translate(792 96)">
+    <ellipse cx="14" cy="18" rx="12" ry="16" fill="#FFE66D" stroke="#C68B17" stroke-width="4"/>
+    <rect class="pixel" x="12" y="7" width="4" height="22" fill="#FFF4A3"/>
+  </g>
+
+  <g class="jumper">
+    <rect class="pixel" x="134" y="202" width="72" height="22" fill="#E94436"/>
+    <rect class="pixel" x="150" y="180" width="48" height="24" fill="#FFD58A"/>
+    <rect class="pixel" x="142" y="166" width="62" height="16" fill="#E94436"/>
+    <rect class="pixel" x="158" y="204" width="18" height="36" fill="#2D6CDF"/>
+    <rect class="pixel" x="184" y="204" width="18" height="36" fill="#2D6CDF"/>
+    <rect class="pixel" x="148" y="240" width="28" height="12" fill="#683B1D"/>
+    <rect class="pixel" x="184" y="240" width="28" height="12" fill="#683B1D"/>
+    <rect class="pixel" x="130" y="206" width="16" height="28" fill="#FFD58A"/>
+    <rect class="pixel" x="206" y="190" width="16" height="38" fill="#FFD58A"/>
+    <rect class="pixel" x="164" y="188" width="8" height="8" fill="#111820"/>
+    <rect class="pixel" x="188" y="188" width="8" height="8" fill="#111820"/>
+    <rect class="pixel" x="174" y="198" width="18" height="5" fill="#8A4024"/>
+  </g>
+
+  <g>
+    <rect class="pixel" x="0" y="286" width="960" height="30" fill="#36A852"/>
+    <rect class="pixel" x="0" y="316" width="960" height="44" fill="#9A5A2E"/>
+    <g fill="#C87938">
+      <rect class="pixel" x="24" y="323" width="48" height="12"/>
+      <rect class="pixel" x="112" y="342" width="48" height="12"/>
+      <rect class="pixel" x="210" y="323" width="48" height="12"/>
+      <rect class="pixel" x="316" y="342" width="48" height="12"/>
+      <rect class="pixel" x="426" y="323" width="48" height="12"/>
+      <rect class="pixel" x="532" y="342" width="48" height="12"/>
+      <rect class="pixel" x="646" y="323" width="48" height="12"/>
+      <rect class="pixel" x="760" y="342" width="48" height="12"/>
+      <rect class="pixel" x="868" y="323" width="48" height="12"/>
+    </g>
   </g>
 </svg>
