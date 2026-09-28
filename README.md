@@ -44,6 +44,10 @@ A workflow for mapping an Agent task end to end, identifying measured and suspec
 
 A workflow for checking and analyzing structured data, tracing findings to evidence, and turning the results into a concise decision brief with caveats and optional presentation-ready visuals.
 
+### [Creative Image Production](skills/creative-image-production/README.md)
+
+A provider-aware workflow for turning an image brief into generated or edited assets, with reference-role tracking, visual QA, focused iteration, and reproducible delivery notes.
+
 ---
 
 ## ✍️ 最近在写
