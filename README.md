@@ -26,6 +26,12 @@ Combines product thinking, AI workflows, and practical user experience design.
 
 More projects coming soon.
 
+## 🧰 AI Skills
+
+### [AI PM Skill Evaluator](skills/ai-pm-skill-evaluator/README.md)
+
+A workflow for evaluating and improving AI product management Skills. It checks activation, routing, process adherence, evidence quality, deliverables, and regression behavior, with test cases grounded in product evaluation, discovery, and content-production projects.
+
 ---
 
 ## ✍️ 最近在写
