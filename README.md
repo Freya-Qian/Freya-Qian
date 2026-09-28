@@ -32,6 +32,14 @@ More projects coming soon.
 
 A workflow for evaluating and improving AI product management Skills. It checks activation, routing, process adherence, evidence quality, deliverables, and regression behavior, with test cases grounded in product evaluation, discovery, and content-production projects.
 
+### [AI Product Opportunity Evaluator](skills/ai-product-opportunity-evaluator/README.md)
+
+A structured workflow for assessing an AI product opportunity through user problems, evidence, alternatives, AI's incremental value, feasibility, business assumptions, and low-cost validation.
+
+### [Agent Workflow Cost Diagnostician](skills/agent-workflow-cost-diagnostician/README.md)
+
+A workflow for mapping an Agent task end to end, identifying measured and suspected cost or reliability bottlenecks, and designing quality-aware optimization experiments.
+
 ---
 
 ## ✍️ 最近在写
