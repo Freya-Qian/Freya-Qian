@@ -30,15 +30,19 @@ More projects coming soon.
 
 ### [AI PM Skill Evaluator](skills/ai-pm-skill-evaluator/README.md)
 
-A workflow for evaluating and improving AI product management Skills. It checks activation, routing, process adherence, evidence quality, deliverables, and regression behavior, with test cases grounded in product evaluation, discovery, and content-production projects.
+A workflow for evaluating and improving AI product management Skills. It checks package structure, activation, process adherence, evidence, safety signals, deliverable quality, regression behavior, and measured efficiency.
 
 ### [AI Product Opportunity Evaluator](skills/ai-product-opportunity-evaluator/README.md)
 
-A structured workflow for assessing an AI product opportunity through user problems, evidence, alternatives, AI's incremental value, feasibility, business assumptions, and low-cost validation.
+A workflow for moving from product discovery evidence and alternatives to an opportunity decision, validation plan, and optional product brief.
 
 ### [Agent Workflow Cost Diagnostician](skills/agent-workflow-cost-diagnostician/README.md)
 
 A workflow for mapping an Agent task end to end, identifying measured and suspected cost or reliability bottlenecks, and designing quality-aware optimization experiments.
+
+### [Data to Decision Brief](skills/data-to-decision-brief/README.md)
+
+A workflow for checking and analyzing structured data, tracing findings to evidence, and turning the results into a concise decision brief with caveats and optional presentation-ready visuals.
 
 ---
 

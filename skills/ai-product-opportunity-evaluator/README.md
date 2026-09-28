@@ -1,6 +1,6 @@
 # AI Product Opportunity Evaluator
 
-A practical workflow for turning an AI product idea into an evidence-based opportunity assessment and a low-cost next validation step.
+A practical workflow for moving from product discovery evidence to an opportunity decision, validation plan, and optional product brief.
 
 ## What it evaluates
 
@@ -8,12 +8,14 @@ A practical workflow for turning an AI product idea into an evidence-based oppor
 - Current alternatives and the incremental value AI may provide
 - Product, technical, operational, and business assumptions
 - The smallest credible experiment that can change the decision
+- Interview and research preparation when evidence is missing
+- A traceable product brief or PRD outline when requested
 
 It distinguishes observations from assumptions and avoids treating a demo, broad market claim, or stated preference as proof of demand.
 
 ## Use
 
-Ask a compatible agent to assess an idea before committing to a build. Provide any available user research, workflow examples, constraints, and business context. If evidence is missing, the Skill produces a bounded assessment and identifies what to learn next.
+Ask a compatible agent to explore a product problem, synthesize discovery materials, assess an idea before a build, or prepare a product handoff. Provide any available research, workflow examples, constraints, and business context. If evidence is missing, the Skill produces a bounded assessment and identifies what to learn next; it does not pretend research has already been conducted.
 
 ## Contents
 
