@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">MotoViz</title>
+  <desc id="desc">MotoViz, an AI product for exploring motorcycle scenarios, shown in a simple 8-bit landscape.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#6EC6FF"/><stop offset="1" stop-color="#D7F7FF"/></linearGradient>
+    <clipPath id="scene"><path d="M28 0h904a28 28 0 0 1 28 28v278H0V28A28 28 0 0 1 28 0Z"/></clipPath>
+  </defs>
+  <g clip-path="url(#scene)">
+    <path fill="url(#sky)" d="M0 0h960v306H0z"/>
+    <path fill="#FFF" d="M86 88h80v14h26v14H72v-14h14zm690-24h70v14h24v14h-108V78h14z"/>
+    <path fill="#79C99A" d="M0 244h82v-20h52v20h70v-32h58v32h74v-18h60v18h72v-28h74v28h90v-18h66v18h65v-30h57v30h70v62H0z"/>
+    <path fill="#36A852" d="M0 276h112v-15h55v15h95v-22h60v22h126v-14h68v14h117v-21h80v21h100v-14h55v14h92v30H0z"/>
+    <path fill="#FFE66D" d="M0 306h960v10H0z"/>
+    <path fill="#9A5A2E" d="M0 316h960v204H0z"/>
+    <g fill="#C87938"><path d="M48 338h52v12H48zm132 35h52v12h-52zm130-35h52v12h-52zm132 35h52v12h-52zm132-35h52v12h-52zm132 35h52v12h-52zm132-35h52v12h-52zm66 37h52v12h-52z"/></g>
+    <g transform="translate(585 132)" shape-rendering="crispEdges">
+      <ellipse cx="127" cy="142" rx="118" ry="12" fill="#276D55" opacity=".24"/>
+      <circle cx="55" cy="112" r="42" fill="#101820"/><circle cx="55" cy="112" r="20" fill="#7EF7C8"/>
+      <circle cx="205" cy="112" r="42" fill="#101820"/><circle cx="205" cy="112" r="20" fill="#7EF7C8"/>
+      <path d="M55 112 91 57h53l61 55h-62l-35-45-28 45h77" fill="none" stroke="#172434" stroke-width="15" stroke-linecap="square" stroke-linejoin="miter"/>
+      <path d="m91 57 52-10 27 22-38 13-41-25Z" fill="#FFE66D" stroke="#172434" stroke-width="9"/>
+      <path d="m143 48 35-5 28 25m-7 44 23-38 24-5m-123-9-22-17" fill="none" stroke="#172434" stroke-width="11" stroke-linecap="square"/>
+      <path d="M68 45h28v11H68zM221 56h28v12h-28z" fill="#172434"/>
+      <path d="M174 39h18v9h-18z" fill="#E94436"/>
+    </g>
+  </g>
+  <path fill="#101820" d="M0 316h960v204H0z"/>
+  <path fill="#7EF7C8" d="M60 350h52v8H60z"/>
+  <text x="60" y="407" fill="#F7FAFC" font-family="Arial,sans-serif" font-size="38" font-weight="800">MotoViz</text>
+  <text x="60" y="445" fill="#C8D5DF" font-family="Arial,sans-serif" font-size="20">AI product exploration for motorcycle scenarios</text>
+  <text x="60" y="482" fill="#FFE66D" font-family="monospace" font-size="14">PRODUCT THINKING  /  AI WORKFLOWS  /  UX</text>
+  <path fill="#23384A" d="M60 495h840v2H60z"/>
+  <text x="60" y="513" fill="#FFE66D" font-family="monospace" font-size="13" font-weight="700">OPEN PROJECT  →</text>
+</svg>
