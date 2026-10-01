@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="480" y1="0" x2="480" y2="340" gradientUnits="userSpaceOnUse"><stop stop-color="#78C9F7"/><stop offset="1" stop-color="#D6F4FF"/></linearGradient>
+    <clipPath id="card"><rect width="960" height="560" rx="28"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="960" height="350" fill="url(#sky)"/>
+    <path d="M0 267h132v-18h64v18h96v-28h65v28h102v-17h84v17h91v-30h69v30h91v-18h75v101H0V267Z" fill="#70B98E"/>
+    <path d="M0 300h94v-14h54v14h109v-19h63v19h125v-12h74v12h111v-20h64v20h122v-13h77v50H0v-37Z" fill="#42A86A"/>
+    <path d="M112 82h69a24 24 0 0 1 24 24H87a23 23 0 0 1 25-24Zm39-22h43a22 22 0 0 1 22 22h-87a22 22 0 0 1 22-22Z" fill="#F5FCFF" opacity=".92"/>
+    <path d="M746 90h57a22 22 0 0 1 22 22H721a21 21 0 0 1 25-22Zm33-21h43a21 21 0 0 1 21 21h-85a21 21 0 0 1 21-21Z" fill="#F5FCFF" opacity=".92"/>
+    <rect x="586" y="118" width="256" height="152" rx="8" fill="#D6F4FF" opacity=".5"/>
+    <circle cx="650" cy="253" r="38" fill="#142331"/><circle cx="650" cy="253" r="23" fill="#93E9D0"/><circle cx="650" cy="253" r="9" fill="#142331"/>
+    <circle cx="800" cy="253" r="38" fill="#142331"/><circle cx="800" cy="253" r="23" fill="#93E9D0"/><circle cx="800" cy="253" r="9" fill="#142331"/>
+    <path d="m650 253 45-72 50 72h-95Zm45-72 52-8 53 80m-105-72-46-29m151 36 44-8" stroke="#132331" stroke-width="13" stroke-linecap="square" stroke-linejoin="bevel"/>
+    <path d="m691 184 47-3 31 21-25 12-27-10-26-20Z" fill="#FFCE55" stroke="#132331" stroke-width="8" stroke-linejoin="bevel"/>
+    <rect x="615" y="144" width="28" height="10" fill="#132331"/><rect x="817" y="171" width="20" height="10" fill="#132331"/>
+    <path d="M0 338h960v20H0z" fill="#F6C65B"/>
+    <rect y="350" width="960" height="210" fill="#101820"/>
+    <rect x="60" y="389" width="54" height="8" rx="4" fill="#7EF7C8"/>
+    <text x="60" y="450" fill="#F7FAFC" font-family="Arial,sans-serif" font-size="48" font-weight="700">MotoViz</text>
+    <text x="62" y="490" fill="#C8D5DF" font-family="Arial,sans-serif" font-size="22">AI product exploration for motorcycle scenarios</text>
+    <text x="62" y="529" fill="#FFE66D" font-family="SFMono-Regular,Consolas,monospace" font-size="15" font-weight="600">EXPLORE PROJECT  →</text>
+  </g>
+</svg>
