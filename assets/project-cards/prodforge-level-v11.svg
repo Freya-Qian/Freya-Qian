@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="520" viewBox="0 0 960 520" role="img" aria-labelledby="title desc">
+  <title id="title">ProdForge AI — from early idea to build-ready plan</title>
+  <desc id="desc">A few classic pixel blocks form a product-building scene under the ProdForge AI level HUD.</desc>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#6EC6FF"/><stop offset="1" stop-color="#D7F7FF"/></linearGradient>
+    <clipPath id="frame"><rect width="960" height="520" rx="28"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)" shape-rendering="crispEdges">
+    <path fill="url(#sky)" d="M0 0h960v520H0z"/>
+    <path fill="#FFF" d="M94 90h84v14h26v14H78v-14h16zm666-38h68v14h26v14H738V66h22z"/>
+    <path fill="#79C99A" d="M0 300h120v-48h64v48h104v-76h70v76h116v-42h76v42h112v-66h74v66h118v-50h70v50h36v64H0z"/>
+    <path fill="#36A852" d="M0 336h94v-24h64v24h122v-36h76v36h128v-22h72v22h118v-36h76v36h120v-24h74v24h16v34H0z"/>
+    <path fill="#FFE66D" d="M0 370h960v12H0z"/>
+    <path fill="#9A5A2E" d="M0 382h960v138H0z"/>
+    <path fill="#C87938" d="M48 406h56v12H48zm136 36h56v12h-56zm136-36h56v12h-56zm136 36h56v12h-56zm136-36h56v12h-56zm136 36h56v12h-56zm136-36h56v12h-56z"/>
+    <ellipse cx="730" cy="368" rx="240" ry="13" fill="#173F35" opacity=".24"/>
+    <g shape-rendering="crispEdges">
+      <path fill="#F4A92B" d="M506 154h96v96h-96z"/><path fill="#FFD45A" d="M515 163h78v78h-78z"/><path fill="#F4A92B" d="M524 172h60v60h-60z"/>
+      <text x="540" y="220" fill="#8B4B13" font-family="monospace" font-size="48" font-weight="800">?</text>
+      <path fill="#FFE66D" d="M619 190h18v18h-18zm20 17h18v18h-18zm20 17h18v18h-18z"/>
+      <path fill="#8A4B27" d="M680 218h84v84h-84z"/><path fill="#C87938" d="M689 227h66v16h-66zm11 27h44v39h-44z"/>
+      <path fill="#8A4B27" d="M772 218h84v84h-84z"/><path fill="#C87938" d="M781 227h66v16h-66zm11 27h44v39h-44z"/>
+      <path fill="#F4A92B" d="M866 266h80v80h-80z"/><path fill="#FFD45A" d="M875 275h62v62h-62z"/>
+      <path fill="#7EF7C8" d="M889 313h8v15h-8zm17-20h8v35h-8zm17-12h8v47h-8z"/>
+    </g>
+    <g transform="translate(48 46)">
+      <path fill="#101820" d="M0 0h390v151H0z"/><path fill="#23384A" d="M0 0h390v14H0zm0 137h390v14H0z"/>
+      <path fill="#FF6262" d="M18 24h12v12H18z"/><path fill="#FFC83D" d="M38 24h12v12H38z"/><path fill="#39D98A" d="M58 24h12v12H58z"/>
+      <text x="91" y="35" fill="#C8D5DF" font-family="monospace" font-size="14">LEVEL 02 / IDEA TO BUILD</text>
+      <text x="22" y="91" fill="#F7FAFC" font-family="Arial,sans-serif" font-size="38" font-weight="800">ProdForge AI</text>
+      <text x="22" y="119" fill="#C8D5DF" font-family="Arial,sans-serif" font-size="17">Turn ideas into build-ready plans</text>
+    </g>
+    <path fill="#101820" d="M48 346h302v28H48z"/>
+    <text x="64" y="365" fill="#FFE66D" font-family="monospace" font-size="13" font-weight="700">CLARIFY  ·  POSITION  ·  BUILD</text>
+    <path fill="#7EF7C8" d="M48 478h44v8H48z"/>
+    <text x="104" y="489" fill="#F7FAFC" font-family="monospace" font-size="13">OPEN PROJECT  →</text>
+  </g>
+</svg>
