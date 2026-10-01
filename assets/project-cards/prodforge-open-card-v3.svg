@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="480" y1="0" x2="480" y2="340" gradientUnits="userSpaceOnUse"><stop stop-color="#78C9F7"/><stop offset="1" stop-color="#D6F4FF"/></linearGradient>
+    <clipPath id="card"><rect width="960" height="560" rx="28"/></clipPath>
+  </defs>
+  <g clip-path="url(#card)">
+    <rect width="960" height="350" fill="url(#sky)"/>
+    <path d="M0 275h120v-23h67v23h100v-16h64v16h114v-26h72v26h103v-17h75v17h105v-22h80v75H0v-53Z" fill="#83C99A"/>
+    <path d="M0 310h102v-17h60v17h113v-12h73v12h112v-23h69v23h118v-13h70v13h123v-19h120v48H0v-29Z" fill="#4AAE72"/>
+    <path d="M106 85h61a23 23 0 0 1 23 23H80a23 23 0 0 1 26-23Zm34-22h45a22 22 0 0 1 22 22h-89a22 22 0 0 1 22-22Z" fill="#F5FCFF" opacity=".92"/>
+    <path d="M756 87h56a22 22 0 0 1 22 22H731a22 22 0 0 1 25-22Zm32-20h43a21 21 0 0 1 21 20h-85a21 21 0 0 1 21-20Z" fill="#F5FCFF" opacity=".92"/>
+    <path d="M610 234h72m0 0v-38h76m-76 38v-76h76m0 0h75m-75 0v76h75" stroke="#264052" stroke-width="8" stroke-linecap="square" stroke-dasharray="12 12"/>
+    <rect x="579" y="205" width="62" height="62" rx="6" fill="#101820"/><path d="M596 241v-22h12l11 9 12-17 13 14v16h-48Z" stroke="#7EF7C8" stroke-width="5" stroke-linejoin="miter"/><path d="M591 213h9m34 0h9m-26-13v8" stroke="#FFE66D" stroke-width="4"/>
+    <rect x="728" y="122" width="62" height="62" rx="6" fill="#101820"/><path d="M745 158v-22h12l11 9 12-17 13 14v16h-48Z" stroke="#7EF7C8" stroke-width="5" stroke-linejoin="miter"/><path d="M740 130h9m34 0h9m-26-13v8" stroke="#FFE66D" stroke-width="4"/>
+    <rect x="803" y="205" width="62" height="62" rx="6" fill="#101820"/><path d="M820 241v-22h12l11 9 12-17 13 14v16h-48Z" stroke="#7EF7C8" stroke-width="5" stroke-linejoin="miter"/><path d="M815 213h9m34 0h9m-26-13v8" stroke="#FFE66D" stroke-width="4"/>
+    <rect x="653" y="86" width="62" height="62" rx="6" fill="#101820"/><path d="M670 122v-22h12l11 9 12-17 13 14v16h-48Z" stroke="#7EF7C8" stroke-width="5" stroke-linejoin="miter"/><path d="M665 94h9m34 0h9m-26-13v8" stroke="#FFE66D" stroke-width="4"/>
+    <circle cx="701" cy="196" r="9" fill="#FFE66D"/><circle cx="779" cy="196" r="9" fill="#FFE66D"/>
+    <path d="M0 338h960v20H0z" fill="#F6C65B"/>
+    <rect y="350" width="960" height="210" fill="#101820"/>
+    <rect x="60" y="389" width="54" height="8" rx="4" fill="#7EF7C8"/>
+    <text x="60" y="450" fill="#F7FAFC" font-family="Arial,sans-serif" font-size="48" font-weight="700">ProdForge AI</text>
+    <text x="62" y="490" fill="#C8D5DF" font-family="Arial,sans-serif" font-size="22">Turn early ideas into build-ready product plans</text>
+    <text x="62" y="529" fill="#FFE66D" font-family="SFMono-Regular,Consolas,monospace" font-size="15" font-weight="600">EXPLORE PROJECT  →</text>
+  </g>
+</svg>
