@@ -20,8 +20,7 @@
       <path d="M66 133 115 65h78l77 68h-88l-44-56-38 56h104" fill="none" stroke="#172434" stroke-width="21" stroke-linecap="square" stroke-linejoin="miter"/>
       <path d="m115 65 78-15 40 31-56 20-62-36Z" fill="#FFE66D" stroke="#172434" stroke-width="12"/>
       <path d="m193 50 48-7 36 41m-9 49 32-55 31-7m-161-6-34-27" fill="none" stroke="#172434" stroke-width="16" stroke-linecap="square"/>
-      <path d="M70 24h45v17H70zm286 53h42v18h-42z" fill="#172434"/>
-      <path d="M245 38h22v12h-22z" fill="#E94436"/>
+      <path d="M270 62h42v14h-42z" fill="#172434"/>
     </g>
     <g transform="translate(48 46)">
       <path fill="#101820" d="M0 0h390v151H0z"/><path fill="#23384A" d="M0 0h390v14H0zm0 137h390v14H0z"/>
