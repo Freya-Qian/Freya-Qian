@@ -26,6 +26,9 @@ Combines product thinking, AI workflows, and practical user experience design.
 
 More projects coming soon.
 
+🧠 [**ProdForge AI**](projects/ProdForge-AI/README.md)
+An AI product incubation workbench for turning early ideas into validated requirements, positioning, PRDs, and development plans.
+
 ## 🧰 AI Skills
 
 ### [AI PM Skill Evaluator](skills/ai-pm-skill-evaluator/README.md)
