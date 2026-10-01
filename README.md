@@ -20,14 +20,12 @@ It is the lens for understanding systems, evaluating opportunities, and making b
 
 Products and tools built through an AI product lens.
 
-🏍️ [**MotoViz**](https://github.com/MN0709/MotoViz)  
-An AI product exploration project for motorcycle-related scenarios.  
-Combines product thinking, AI workflows, and practical user experience design.
-
-More projects coming soon.
-
-🧠 [**ProdForge AI**](projects/ProdForge-AI/README.md)
-An AI product incubation workbench for turning early ideas into validated requirements, positioning, PRDs, and development plans.
+<table>
+  <tr>
+    <td width="50%" valign="top"><a href="https://github.com/MN0709/MotoViz"><img src="assets/project-cards/motoviz.svg" alt="MotoViz project card" width="100%"></a></td>
+    <td width="50%" valign="top"><a href="projects/ProdForge-AI/README.md"><img src="assets/project-cards/prodforge-ai.svg" alt="ProdForge AI project card" width="100%"></a></td>
+  </tr>
+</table>
 
 ## 🧰 AI Skills
 

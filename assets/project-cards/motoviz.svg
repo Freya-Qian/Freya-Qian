@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520" fill="none">
+  <rect x="1" y="1" width="898" height="518" rx="30" fill="#F2F7F4" stroke="#D8E6DE" stroke-width="2"/>
+  <circle cx="738" cy="143" r="103" fill="#E0EEE6"/>
+  <path d="M646 230h168" stroke="#AAC4B5" stroke-width="3" stroke-linecap="round"/>
+  <path d="M669 211c15-44 43-68 79-68 37 0 64 25 79 68" stroke="#527B67" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="689" cy="221" r="29" fill="#F2F7F4" stroke="#345C49" stroke-width="5"/>
+  <circle cx="791" cy="221" r="29" fill="#F2F7F4" stroke="#345C49" stroke-width="5"/>
+  <path d="m689 221 30-49 33 49h-63Zm30-49 32-4 26 53m-69-50-27-20m91 23 24-4" stroke="#345C49" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="62" y="58" width="124" height="36" rx="18" fill="#DCEBE2"/>
+  <text x="124" y="82" text-anchor="middle" fill="#345C49" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="16" font-weight="700" letter-spacing="1">AI PRODUCT</text>
+  <text x="62" y="314" fill="#18251E" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="54" font-weight="700">MotoViz</text>
+  <text x="64" y="362" fill="#4F6257" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="22">AI product exploration for motorcycle scenarios</text>
+  <text x="64" y="402" fill="#718077" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="18">Product thinking · AI workflows · User experience</text>
+  <path d="M64 457h772" stroke="#D8E6DE" stroke-width="2"/>
+  <text x="64" y="490" fill="#345C49" font-family="-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif" font-size="16" font-weight="600">EXPLORE PROJECT</text>
+  <path d="M216 484h34m-9-9 9 9-9 9" stroke="#345C49" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
