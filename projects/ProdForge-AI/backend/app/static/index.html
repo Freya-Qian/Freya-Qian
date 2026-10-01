@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 产品工厂 · M1 验收</title>
+<style>
+  body { font-family: -apple-system, "PingFang SC", "Microsoft YaHei", sans-serif; margin: 0; background: #f5f6f8; color: #1f2329; }
+  header { background: #1f2329; color: #fff; padding: 14px 24px; font-size: 18px; font-weight: 600; }
+  .wrap { max-width: 960px; margin: 24px auto; padding: 0 16px; }
+  .card { background: #fff; border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+  h2 { margin: 0 0 12px; font-size: 16px; }
+  button { background: #3370ff; color: #fff; border: 0; border-radius: 6px; padding: 8px 14px; cursor: pointer; font-size: 14px; }
+  button:hover { background: #2b5fd9; }
+  button.ghost { background: #eef1f6; color: #1f2329; }
+  button.ghost:hover { background: #e2e6ed; }
+  button.green { background: #18a058; }
+  button.green:hover { background: #128a49; }
+  input, textarea { width: 100%; box-sizing: border-box; border: 1px solid #dcdfe6; border-radius: 6px; padding: 8px 10px; font-size: 14px; margin: 4px 0 10px; font-family: inherit; }
+  textarea { min-height: 52px; resize: vertical; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .muted { color: #8a919f; font-size: 13px; }
+  ul { list-style: none; padding: 0; margin: 0; }
+  li { padding: 10px; border-bottom: 1px solid #f0f1f3; cursor: pointer; }
+  li:hover { background: #f7f8fa; }
+  li.active { background: #eaf1ff; }
+  .step { border: 1px solid #eceef1; border-radius: 8px; padding: 14px; margin-bottom: 12px; background: #fbfbfd; }
+  .step.done { border-color: #c9ecd6; background: #f4fbf7; }
+  .step .num { display: inline-block; width: 22px; height: 22px; line-height: 22px; text-align: center; border-radius: 50%; background: #3370ff; color: #fff; font-size: 13px; margin-right: 6px; }
+  .step.done .num { background: #18a058; }
+  .step .title { font-weight: 600; font-size: 15px; }
+  .q { border: 1px solid #eceef1; border-radius: 8px; padding: 12px; margin-bottom: 10px; background: #fff; }
+  .q .d { font-weight: 600; font-size: 13px; color: #3370ff; }
+  .q .hint { color: #8a919f; font-size: 12px; margin: 4px 0 8px; }
+  .badge { display: inline-block; background: #eef1f6; border-radius: 4px; padding: 2px 8px; font-size: 12px; color: #646a73; margin-left: 6px; }
+  .badge.must { background: #fff1e5; color: #d9610b; }
+  .field { margin-bottom: 10px; }
+  .field label { font-weight: 600; font-size: 13px; display: block; margin-bottom: 4px; }
+  .banner { border-radius: 8px; padding: 12px 14px; margin-bottom: 12px; font-size: 14px; display: none; }
+  .banner.err { background: #fdeceb; color: #d83931; display: block; }
+  .banner.ok { background: #e8f7ee; color: #18a058; display: block; }
+</style>
+</head>
+<body>
+<header>AI 产品工厂 · M1 需求澄清验收</header>
+<div class="wrap">
+  <div class="card">
+    <h2><span class="num" style="background:#3370ff;color:#fff;display:inline-block;width:22px;height:22px;line-height:22px;text-align:center;border-radius:50%;font-size:13px">1</span> 新建项目</h2>
+    <div class="muted" style="margin-bottom:8px">示例想法一键填入：</div>
+    <div class="row" style="margin-bottom:8px" id="samples"></div>
+    <input id="pname" placeholder="项目名称">
+    <textarea id="pidea" placeholder="一句模糊想法，如：做一个帮助专注学习的番茄钟 App"></textarea>
+    <div class="row">
+      <button onclick="createProject()">创建项目</button>
+      <span class="muted">创建后自动进入第 2 步</span>
+    </div>
+    <div class="banner err" id="create-err"></div>
+  </div>
+
+  <div class="card">
+    <h2>项目列表</h2>
+    <ul id="plist"></ul>
+  </div>
+
+  <div class="card" id="work-card">
+    <h2 id="work-title">工作台</h2>
+    <div id="stage-hint" style="display:none;background:#fff8e6;border:1px solid #f0d9a0;border-radius:8px;padding:10px 14px;margin-bottom:12px;font-size:14px"></div>
+    <div class="banner" id="work-banner"></div>
+    <div id="work-hint" class="muted" style="padding:8px 0">👈 请先在第 1 步创建项目，或从下方「项目列表」选一个项目，这里会展开 5 步工作流。</div>
+    <div id="steps" style="display:none">
+
+    <div class="step" id="step2">
+      <div class="title"><span class="num">2</span> 需求澄清：AI 提问 → 你回答（必答 3 个，其余可跳过）</div>
+      <div class="row" style="margin-top:10px">
+        <button onclick="genQuestions()">生成澄清问题（8 问）</button>
+        <button class="ghost" onclick="skipOptional()">跳过选答项（5 个）</button>
+      </div>
+      <div id="questions" style="margin-top:10px"></div>
+    </div>
+
+    <div class="step" id="step3">
+      <div class="title"><span class="num">3</span> 需求摘要：生成 → 编辑 → 确认</div>
+      <div class="row" style="margin-top:10px">
+        <button class="green" onclick="genBrief()">生成需求摘要</button>
+      </div>
+      <div id="brief" style="margin-top:10px"></div>
+    </div>
+
+    <div class="step" id="step4">
+      <div class="title"><span class="num">4</span> 竞品证据：添加竞品（最多 3 个）→ 贴网址抓取证据卡</div>
+      <div class="row" style="margin-top:10px">
+        <button onclick="loadCompetitors()">刷新竞品证据</button>
+      </div>
+      <div id="competitors" style="margin-top:10px"></div>
+    </div>
+
+    <div class="step" id="step5">
+      <div class="title"><span class="num">5</span> 定位与差异点：生成 → 编辑 → 确认（进入 PRD）</div>
+      <div class="row" style="margin-top:10px">
+        <button class="green" onclick="genPositioning()">生成定位与差异点</button>
+      </div>
+      <div id="positioning" style="margin-top:10px"></div>
+    </div>
+
+    <div class="step" id="step6">
+      <div class="title"><span class="num">6</span> PRD：生成（11 章节带证据引用）→ 编辑 → 确认</div>
+      <div class="row" style="margin-top:10px">
+        <button class="green" onclick="genPrd()">生成 PRD</button>
+      </div>
+      <div id="prd" style="margin-top:10px"></div>
+    </div>
+
+    <div class="step" id="step7">
+      <div class="title"><span class="num">7</span> 研发任务拆解：生成 → 查看 → 确认</div>
+      <div class="row" style="margin-top:10px">
+        <button class="green" onclick="genTasks()">生成研发任务</button>
+      </div>
+      <div id="tasks" style="margin-top:10px"></div>
+    </div>
+
+    <div class="step" id="step8">
+      <div class="title"><span class="num">8</span> 资料包导出：Markdown / 飞书复制 / GitHub issue 草稿</div>
+      <div class="row" style="margin-top:10px">
+        <button class="green" onclick="exportProject('markdown')">导出 Markdown</button>
+        <button onclick="exportProject('feishu_copy')">飞书复制格式</button>
+        <button onclick="exportProject('github_issue')">GitHub issue 草稿</button>
+        <button class="ghost" onclick="copyExport()">复制全文</button>
+        <button class="ghost" onclick="downloadExport()">下载 .md</button>
+      </div>
+      <div id="export" style="margin-top:10px"></div>
+    </div>
+
+    <div class="step" id="step9">
+      <div class="title"><span class="num">9</span> 迭代记录：反馈 + 决策台账</div>
+      <div class="row" style="margin-top:10px">
+        <input id="fb-content" placeholder="输入反馈（如：希望 PRD 更聚焦）" style="flex:1">
+        <button class="green" onclick="submitFeedback()">提交反馈</button>
+      </div>
+      <div id="feedback-list" style="margin-top:10px"></div>
+      <div id="decision-list" style="margin-top:10px"></div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<script>
+let currentProject = null;
+const $ = id => document.getElementById(id);
+
+function showBanner(type, text) {
+  const b = $('work-banner');
+  b.className = 'banner ' + (type === 'ok' ? 'ok' : 'err');
+  b.textContent = text;
+  b.style.display = text ? 'block' : 'none';
+}
+
+async function api(path, method='GET', body=null) {
+  const opt = { method, headers: {} };
+  if (body) { opt.headers['Content-Type']='application/json'; opt.body = JSON.stringify(body); }
+  const r = await fetch('/api/v1'+path, opt);
+  const data = await r.json().catch(()=>({}));
+  if (!r.ok) throw new Error(data?.error?.message || ('HTTP '+r.status));
+  return data;
+}
+
+async function pollTask(taskId, onDone) {
+  for (let i=0;i<90;i++) {
+    await new Promise(r=>setTimeout(r,1000));
+    const t = await api('/tasks/'+taskId);
+    if (t.status==='success') { onDone(t); return; }
+    if (t.status==='failed') throw new Error(t.error || '任务失败');
+  }
+  throw new Error('任务超时');
+}
+
+function loadSamples() {
+  api('/samples').then(d => {
+    $('samples').innerHTML = d.samples.map((s,i)=>
+      `<button class="ghost" onclick="fillSample(${i})">${s.name}</button>`).join('');
+  });
+}
+function fillSample(i) {
+  api('/samples').then(d => { const s=d.samples[i]; $('pname').value=s.name; $('pidea').value=s.idea; });
+}
+
+async function createProject() {
+  $('create-err').textContent=''; $('create-err').className='banner';
+  try {
+    const p = await api('/projects','POST',{ name:$('pname').value, idea:$('pidea').value, goal_type:'real' });
+    currentProject = p;
+    $('work-hint').style.display='none';
+    $('steps').style.display='block';
+    $('work-title').textContent = '工作台 · '+p.name;
+    $('questions').innerHTML=''; $('brief').innerHTML='';
+    showBanner('ok', '项目已创建，请点第 2 步「生成澄清问题」');
+    loadProjects();
+  } catch(e) { $('create-err').textContent = e.message; $('create-err').className='banner err'; }
+}
+
+async function loadProjects() {
+  const list = await api('/projects');
+  $('plist').innerHTML = list.map(p=>{
+    const stageName = {clarify:'需求澄清',competitor:'竞品证据',prd:'PRD',tasks:'任务拆解',package:'资料包'}[p.current_stage] || p.current_stage;
+    return `<li class="${currentProject && p.id===currentProject.id?'active':''}" onclick="openProject('${p.id}')">
+      ${p.name} <span class="badge">${stageName}</span> <span class="muted">${new Date(p.updated_at).toLocaleString()}</span>
+    </li>`;
+  }).join('') || '<li class="muted">暂无项目</li>';
+}
+
+async function openProject(id) {
+  currentProject = await api('/projects/'+id);
+  $('work-hint').style.display='none';
+  $('steps').style.display='block';
+  $('work-title').textContent = '工作台 · '+currentProject.name;
+  updateStageHint(currentProject.current_stage);
+  showBanner('ok', '');
+  $('work-banner').style.display = 'none';
+  loadQuestions(); loadBrief(); loadCompetitors(); loadPositioning(); loadPrd(); loadTasks(); loadFeedback(); loadProjects();
+}
+
+function updateStageHint(stage) {
+  const hints = {
+    clarify: '👉 <b>下一步</b>：第 2 步「生成澄清问题」→ 回答 3 个必答 → 点「保存回答」→ 第 3 步「生成需求摘要」→「保存并确认」',
+    competitor: '👉 <b>下一步</b>：第 4 步「添加竞品」（或「自动推荐竞品」）→ 加证据卡 → 第 5 步「生成定位与差异点」→「保存并确认」',
+    prd: '👉 <b>下一步</b>：第 6 步「生成 PRD」→「保存并确认」',
+    tasks: '👉 <b>下一步</b>：第 7 步「生成研发任务」→「确认任务」',
+    package: '✅ 流程已完成，可到第 8 步「导出资料包」，或在第 9 步记录反馈',
+  };
+  const el = $('stage-hint');
+  if (hints[stage]) { el.innerHTML = hints[stage]; el.style.display = 'block'; }
+  else { el.style.display = 'none'; }
+}
+
+async function genQuestions() {
+  if (!currentProject) return;
+  showBanner('err', ''); $('work-banner').style.display='none';
+  showBanner('ok', 'AI 正在生成 8 个问题，请稍候（约 15-30 秒）…');
+  try {
+    const task = await api(`/projects/${currentProject.id}/clarify/questions`,'POST');
+    await pollTask(task.id, () => {
+      showBanner('ok', '问题已生成！请回答（必答 3 个，其余可跳过），然后点第 3 步「生成需求摘要」');
+      loadQuestions();
+    });
+  } catch(e) { showBanner('err', e.message); }
+}
+
+async function loadQuestions() {
+  if (!currentProject) return;
+  try {
+    const qs = await api(`/projects/${currentProject.id}/clarify/questions`);
+    if (!qs.length) { $('questions').innerHTML = '<div class="muted">尚未生成问题，点上方「生成澄清问题」。</div>'; return; }
+    const req = qs.filter(q=>q.required).length;
+    $('questions').innerHTML = `<div class="muted" style="margin-bottom:8px">只需回答 <b>${req} 个必答</b>（目标用户/场景/成功指标），其余选答可跳过</div>`+
+      qs.map(q=>`
+      <div class="q">
+        <div class="d">${q.dimension}${q.required?'<span class="badge must">必答</span>':'<span class="badge">选答</span>'}${q.skipped?'<span class="badge">已跳过</span>':''}</div>
+        <div class="hint">${q.hint||''}</div>
+        <div>${q.question}</div>
+        <textarea id="ans-${q.id}" placeholder="${q.required?'必答，建议填写':'选答，可留空跳过'}">${q.answer||''}</textarea>
+      </div>`).join('');
+    $('questions').innerHTML += '<button onclick="submitAnswers()">保存回答</button>';
+  } catch(e) { /* 尚未生成 */ }
+}
+
+async function skipOptional() {
+  const qs = await api(`/projects/${currentProject.id}/clarify/questions`);
+  if (!qs.length) { showBanner('err', '请先生成澄清问题'); return; }
+  // 只跳过 5 个选答项，保留 3 个必答项待填写
+  const answers = qs.map(q=>({question_id:q.id, answer: q.required ? (q.answer||'') : ''}));
+  try {
+    await api(`/projects/${currentProject.id}/clarify/answers`,'POST',{answers});
+    showBanner('ok', '已跳过选答项。还差 3 个必答（目标用户/场景/成功指标），填完即可生成摘要');
+    loadQuestions();
+  } catch(e) { showBanner('err', e.message); }
+}
+
+async function submitAnswers() {
+  const qs = await api(`/projects/${currentProject.id}/clarify/questions`);
+  const answers = qs.map(q=>({question_id:q.id, answer:document.getElementById('ans-'+q.id)?.value||''}));
+  try {
+    await api(`/projects/${currentProject.id}/clarify/answers`,'POST',{answers});
+    showBanner('ok', '回答已保存！现在点第 3 步「生成需求摘要」');
+    loadQuestions();
+  } catch(e) { showBanner('err', e.message); }
+}
+
+async function genBrief() {
+  if (!currentProject) { showBanner('err', '请先在左侧选择项目'); return; }
+  // 前置校验：必答项未填时明确提示，避免无反馈
+  try {
+    const qs = await api(`/projects/${currentProject.id}/clarify/questions`);
+    if (!qs.length) { showBanner('err', '请先完成第 2 步「生成澄清问题」'); $('step2').scrollIntoView({behavior:'smooth'}); return; }
+    const missing = qs.filter(q => q.required && !(q.answer || '').trim());
+    if (missing.length) {
+      showBanner('err', '还差 ' + missing.length + ' 个必答项未填：' + missing.map(q=>q.dimension).join('、') + '。请在第 2 步填写并点「保存回答」后再来生成摘要');
+      $('step2').scrollIntoView({behavior:'smooth', block:'start'});
+      return;
+    }
+  } catch(e) { /* 问题尚未生成，走下方提交逻辑报错 */ }
+  showBanner('ok', 'AI 正在生成需求摘要，请稍候（约 10-15 秒）…');
+  try {
+    const task = await api(`/projects/${currentProject.id}/brief`,'POST');
+    await pollTask(task.id, () => {
+      showBanner('ok', '摘要已生成！可编辑下方内容，然后点「保存并确认」进入竞品证据阶段');
+      loadBrief();
+    });
+  } catch(e) { showBanner('err', e.message); }
+}
+
+async function loadBrief() {
+  if (!currentProject) return;
+  try {
+    const b = await api(`/projects/${currentProject.id}/brief`);
+    const fields = ['one_liner','target_users','scenarios','pains','goals','non_goals','success_metrics','external_systems','knowledge_sources','open_questions'];
+    const labels = {one_liner:'一句话定义',target_users:'目标用户',scenarios:'场景',pains:'痛点',goals:'产品目标',non_goals:'非目标',success_metrics:'成功指标',external_systems:'外部系统/数据源',knowledge_sources:'领域知识来源',open_questions:'待确认问题'};
+    const confirmed = b.status === 'confirmed';
+    $('brief').innerHTML = `<div class="muted" style="margin-bottom:8px">版本 ${b.version} · <b>${confirmed?'已确认 ✅':'草稿'}</b></div>`+
+      fields.map(f=>`<div class="field"><label>${labels[f]}</label><textarea id="bf-${f}" ${confirmed?'disabled':''}>${(b[f]||'').replace(/</g,'&lt;')}</textarea></div>`).join('')+
+      (confirmed
+        ? `<button class="ghost" onclick="showBanner('ok','需求澄清已确认，项目进入「竞品证据」阶段（M2 开发中，敬请期待）')">已完成，查看下一步说明</button>`
+        : `<button onclick="saveBrief(false)">保存修改</button> <button class="green" onclick="saveBrief(true)">保存并确认（进入竞品阶段）</button>`);
+  } catch(e) { $('brief').innerHTML='<div class="muted">尚未生成摘要，点上方「生成需求摘要」。</div>'; }
+}
+
+async function saveBrief(doConfirm) {
+  const fields = ['one_liner','target_users','scenarios','pains','goals','non_goals','success_metrics','external_systems','knowledge_sources','open_questions'];
+  const body = { confirm: doConfirm };
+  fields.forEach(f=>body[f]=document.getElementById('bf-'+f)?.value||'');
+  try {
+    await api(`/projects/${currentProject.id}/brief`,'PUT',body);
+    if (doConfirm) {
+      showBanner('ok', '✅ 已确认！需求澄清完成，项目进入「竞品证据」阶段。现在做第 4 步。');
+      $('step2').classList.add('done'); $('step3').classList.add('done');
+    } else {
+      showBanner('ok', '已保存修改');
+    }
+    loadBrief(); loadProjects();
+  } catch(e) { showBanner('err', e.message); }
+}
+
+// ── M2 竞品证据与定位 ──
+
+async function loadCompetitors() {
+  if (!currentProject) return;
+  try {
+    const comps = await api(`/projects/${currentProject.id}/competitors`);
+    const limit = 3;
+    const canAdd = comps.length < limit;
+    let html = `<div class="row" style="margin-bottom:10px">
+        <input id="comp-name" placeholder="竞品名称（如 Forest）" style="width:180px">
+        <input id="comp-url" placeholder="官网链接（可选）" style="width:220px">
+        <button onclick="addCompetitor()" ${canAdd?'':'disabled style="opacity:.4;cursor:not-allowed"'}>${canAdd?'添加竞品':`已满 ${comps.length}/${limit}`}</button>
+        <button class="ghost" onclick="recommendCompetitors()">自动推荐竞品</button>
+      </div>
+      <div id="recommend-list"></div>`;
+    if (!comps.length) {
+      html += '<div class="muted">还没有竞品。请添加你的项目竞品（最多 3 个），可贴网址自动抓取证据卡。</div>';
+    }
+    for (const c of comps) {
+      const evs = await api(`/projects/${currentProject.id}/competitors/${c.id}/evidences`);
+      html += `<div class="q"><div class="d">${c.name}</div>
+        <div class="hint">${c.positioning||''}</div>`;
+      html += evs.map(e=>`
+        <div style="border-top:1px solid #f0f1f3;padding:8px 0">
+          <span class="badge">${e.ref_key}</span><span class="badge">${e.evidence_type}</span><span class="badge">${e.confidence}</span>${e.used_in?`<span class="badge must">被${e.used_in}引用</span>`:''}
+          <div style="font-size:13px;margin:4px 0">${e.structured_claim}</div>
+          <div class="hint">来源：${e.source_url}</div>
+          <button class="ghost" onclick="deleteEvidence('${c.id}','${e.id}')">删除</button>
+        </div>`).join('');
+      html += `</div>`;
+      html += `<div style="margin:8px 0">
+        <input id="fetch-url-${c.id}" placeholder="贴竞品网址自动抓取（如 https://forestapp.cc）">
+        <select id="fetch-type-${c.id}">${['官网','官方文档','公开文章','用户输入'].map(t=>`<option ${t==='公开文章'?'selected':''}>${t}</option>`).join('')}</select>
+        <button class="green" onclick="fetchEvidence('${c.id}')">贴网址抓取生成证据卡</button>
+      </div>`;
+      html += `<div style="margin:8px 0">
+        <input id="ev-url-${c.id}" placeholder="source_url（必填，http/https）">
+        <input id="ev-claim-${c.id}" placeholder="结构化结论">
+        <select id="ev-type-${c.id}">${['定位','功能','流程','集成','输出物','定价','用户','限制'].map(t=>`<option>${t}</option>`).join('')}</select>
+        <button onclick="addEvidence('${c.id}')">新增证据卡</button>
+      </div>`;
+    }
+    $('competitors').innerHTML = html;
+  } catch(e) { showBanner('err', e.message); }
+}
+
+async function addCompetitor() {
+  const body = {
+    name: document.getElementById('comp-name')?.value || '',
+    url: document.getElementById('comp-url')?.value || '',
+  };
+  if (!body.name) { showBanner('err', '请填竞品名称'); return; }
+  try {
+    await api(`/projects/${currentProject.id}/competitors`,'POST',body);
+    showBanner('ok','竞品已添加，可给它加证据卡');
+    loadCompetitors();
+  } catch(e) { showBanner('err', e.message); }
+}
+
+async function recommendCompetitors() {
+  if (!currentProject) return;
+  showBanner('ok', 'AI 正在根据你的想法推荐竞品，请稍候（约 10-30 秒）…');
+  try {
+    const task = await api(`/projects/${currentProject.id}/competitors/recommend`,'POST');
+    await pollTask(task.id, (t) => {
+      let recs = [];
+      try { recs = JSON.parse(t.result_json || '{}').competitors || []; } catch(e) {}
+      if (!recs.length) { showBanner('err', '没推荐到竞品，请手动添加'); return; }
+      showRecommendations(recs);
+    });
+  } catch(e) { showBanner('err', e.message); }
+}
+
+function showRecommendations(recs) {
+  $('recommend-list').innerHTML = '<div style="font-size:13px;font-weight:600;margin:8px 0">推荐竞品（点「添加」自动加入并抓取官网证据）</div>' +
+    recs.map(r=>`<div class="q">
+      <div class="d">${r.name} <span class="badge">${r.positioning||''}</span></div>
+      <div class="hint">${r.url||'（无链接，需手动补）'}</div>
+      <button class="green" onclick="adoptRecommend('${encodeURIComponent(r.name)}','${encodeURIComponent(r.url||'')}','${encodeURIComponent(r.positioning||'')}')">添加</button>
+    </div>`).join('');
+}
+
+async function adoptRecommend(name, url, positioning) {
+  name = decodeURIComponent(name); url = decodeURIComponent(url); positioning = decodeURIComponent(positioning);
+  try {
+    const comp = await api(`/projects/${currentProject.id}/competitors`,'POST',{name, url, positioning});
+    showBanner('ok', `已添加竞品「${name}」`);
+    if (url) {
+      showBanner('ok', `正在抓取「${name}」官网生成证据卡…`);
+      const task = await api(`/projects/${currentProject.id}/competitors/${comp.id}/evidences/fetch`,'POST',{url, source_type:'官网'});
+      await pollTask(task.id, () => { showBanner('ok', `「${name}」证据卡已生成`); });
+    }
+    loadCompetitors();
+  } catch(e) { showBanner('err', e.message); }
+}
+
+async function fetchEvidence(cid) {
+  const url = document.getElementById('fetch-url-'+cid)?.value || '';
+  if (!url) { showBanner('err', '请贴竞品网址'); return; }
+  const source_type = document.getElementById('fetch-type-'+cid)?.value || '公开文章';
+  showBanner('ok', '正在抓取网页并生成证据卡，请稍候（约 10-30 秒）…');
+  try {
+    const task = await api(`/projects/${currentProject.id}/competitors/${cid}/evidences/fetch`,'POST',{url, source_type});
+    await pollTask(task.id, () => {
+      showBanner('ok','证据卡已生成（自动抓取，置信度=合理推断，可再编辑）');
+      loadCompetitors();
+    });
+  } catch(e) { showBanner('err', e.message); }
+}
+
+async function addEvidence(cid) {
+  const body = {
+    source_url: document.getElementById('ev-url-'+cid)?.value || '',
+    structured_claim: document.getElementById('ev-claim-'+cid)?.value || '',
+    evidence_type: document.getElementById('ev-type-'+cid)?.value || '定位',
+    source_type: '用户输入',
+    confidence: '用户补充',
+  };
+  try {
+    await api(`/projects/${currentProject.id}/competitors/${cid}/evidences`,'POST',body);
+    showBanner('ok','证据卡已添加');
+    loadCompetitors();
+  } catch(e) { showBanner('err', e.message); }
+}
+
+async function deleteEvidence(cid, eid) {
+  if (!confirm('确认删除这条证据卡？（删除后不可恢复）')) return;
+  try {
+    await api(`/projects/${currentProject.id}/competitors/${cid}/evidences/${eid}`,'DELETE');
+    showBanner('ok','已删除');
+    loadCompetitors();
+  } catch(e) { showBanner('err', e.message); }
+}
+
+async function genPositioning() {
+  if (!currentProject) { showBanner('err', '请先在左侧选择项目'); return; }
+  // 前置校验：无竞品时明确提示
+  try {
+    const comps = await api(`/projects/${currentProject.id}/competitors`);
+    if (!comps.length) {
+      showBanner('err', '还没添加竞品。请先在第 4 步填竞品名称并点「添加竞品」按钮（列表里能看到竞品才算成功），再生成定位与差异点');
+      $('step4').scrollIntoView({behavior:'smooth', block:'start'});
+      return;
+    }
+  } catch(e) { /* 走下方提交逻辑报错 */ }
+  showBanner('ok', 'AI 正在生成定位与差异点，请稍候…');
+  try {
+    const task = await api(`/projects/${currentProject.id}/positioning`,'POST');
+    await pollTask(task.id, () => {
+      showBanner('ok','定位已生成！可编辑后点「保存并确认」进入 PRD 阶段');
+      loadPositioning();
+    });
+  } catch(e) { showBanner('err', e.message); }
+}
+
+async function loadPositioning() {
+  if (!currentProject) return;
+  try {
+    const p = await api(`/projects/${currentProject.id}/positioning`);
+    const confirmed = p.status === 'confirmed';
+    const diffs = (p.differentiators||[]).map(d=>
+      `<li><b>${d.point}</b> ${(d.evidence_refs||[]).map(r=>`<span class="badge">${r}</span>`).join('')}</li>`).join('');
+    const compNames = [...new Set((p.comparison||[]).flatMap(c=>Object.keys(c.competitors||{})))];
+    const cmpHead = `<tr><th style="text-align:left;border-bottom:1px solid #eee;padding:4px">维度</th>${compNames.map(n=>`<th style="text-align:left;border-bottom:1px solid #eee;padding:4px">${n}</th>`).join('')}<th style="text-align:left;border-bottom:1px solid #eee;padding:4px">我们的产品</th></tr>`;
+    const cmp = (p.comparison||[]).map(c=>
+      `<tr><td style="border-bottom:1px solid #f5f5f5;padding:4px">${c.dimension}</td>${compNames.map(n=>`<td style="border-bottom:1px solid #f5f5f5;padding:4px">${(c.competitors||{})[n]||''}</td>`).join('')}<td style="border-bottom:1px solid #f5f5f5;padding:4px">${c.our_product||''}</td></tr>`).join('');
+    $('positioning').innerHTML = `
+      <div class="muted">版本 ${p.version} · <b>${confirmed?'已确认 ✅':'草稿'}</b></div>
+      <div class="field"><label>一句话定位</label><textarea id="po-oneliner" ${confirmed?'disabled':''}>${(p.one_liner||'').replace(/</g,'&lt;')}</textarea></div>
+      <div class="field"><label>目标用户</label><textarea id="po-users" ${confirmed?'disabled':''}>${(p.target_users||'').replace(/</g,'&lt;')}</textarea></div>
+      <div class="field"><label>核心价值主张</label><textarea id="po-value" ${confirmed?'disabled':''}>${(p.value_proposition||'').replace(/</g,'&lt;')}</textarea></div>
+      <div class="field"><label>差异化（含证据引用）</label><ul>${diffs}</ul></div>
+      <div class="field"><label>竞品对比表</label><table style="width:100%;font-size:13px;border-collapse:collapse">${cmpHead}${cmp}</table></div>
+      <div class="field"><label>不做什么</label><textarea id="po-nongoals" ${confirmed?'disabled':''}>${(p.non_goals||'').replace(/</g,'&lt;')}</textarea></div>
+      ${confirmed ? `<button class="ghost" onclick="showBanner('ok','定位已确认，项目进入 PRD 阶段')">查看下一步说明</button>`
+        : `<button onclick="savePositioning(false)">保存修改</button> <button class="green" onclick="savePositioning(true)">保存并确认（进入 PRD）</button>`}`;
+  } catch(e) { $('positioning').innerHTML='<div class="muted">尚未生成定位（需先完成第 3 步需求摘要），点上方「生成定位与差异点」。</div>'; }
+}
+
+async function savePositioning(doConfirm) {
+  const body = {
+    confirm: doConfirm,
+    one_liner: document.getElementById('po-oneliner')?.value||'',
+    target_users: document.getElementById('po-users')?.value||'',
+    value_proposition: document.getElementById('po-value')?.value||'',
+    non_goals: document.getElementById('po-nongoals')?.value||'',
+  };
+  try {
+    await api(`/projects/${currentProject.id}/positioning`,'PUT',body);
+    if (doConfirm) {
+      showBanner('ok','✅ 定位已确认，项目进入 PRD 阶段');
+      $('step5').classList.add('done');
+    } else {
+      showBanner('ok','已保存');
+    }
+    loadPositioning(); loadProjects();
+  } catch(e) { showBanner('err', e.message); }
+}
+
+// ── M3 PRD 与任务拆解 ──
+
+async function genPrd() {
+  if (!currentProject) return;
+  showBanner('ok', 'AI 正在生成 PRD（11 章节，约 1-2 分钟）…');
+  try {
+    const task = await api(`/projects/${currentProject.id}/prd`,'POST');
+    await pollTask(task.id, () => {
+      showBanner('ok','PRD 已生成！可编辑后点「保存并确认」');
+      loadPrd();
+    });
+  } catch(e) { showBanner('err', e.message); }
+}
+
+async function loadPrd() {
+  if (!currentProject) return;
+  try {
+    const doc = await api(`/projects/${currentProject.id}/prd`);
+    const confirmed = doc.status === 'confirmed';
+    $('prd').innerHTML = `<div class="muted" style="margin-bottom:8px">版本 ${doc.version} · <b>${confirmed?'已确认 ✅':'草稿'}</b> · 引用证据 ${(doc.evidence_refs||[]).join(', ')||'无'}</div>` +
+      doc.sections.map((s,i)=>`
+        <div class="field">
+          <label>${s.title}${s.status==='待确认'?'<span class="badge must">待确认（无证据）</span>':''}${(s.evidence_refs||[]).map(r=>`<span class="badge">${r}</span>`).join('')}</label>
+          <textarea id="sec-${i}" ${confirmed?'disabled':''}>${(s.content||'').replace(/</g,'&lt;')}</textarea>
+        </div>`).join('') +
+      (confirmed ? `<button class="ghost" onclick="showBanner('ok','PRD 已确认，可生成研发任务')">已完成</button>`
+        : `<button onclick="savePrd(false)">保存修改</button> <button class="green" onclick="savePrd(true)">保存并确认（进入任务拆解）</button>`);
+    window._prdSections = doc.sections;
+  } catch(e) { $('prd').innerHTML='<div class="muted">尚未生成 PRD，点上方「生成 PRD」。</div>'; }
+}
+
+async function savePrd(doConfirm) {
+  const sections = (window._prdSections||[]).map((s,i)=>({...s, content: document.getElementById('sec-'+i)?.value||''}));
+  try {
+    await api(`/projects/${currentProject.id}/prd`,'PUT',{sections, confirm: doConfirm});
+    if (doConfirm) { showBanner('ok','✅ PRD 已确认，进入任务拆解'); $('step6').classList.add('done'); }
+    else { showBanner('ok','已保存'); }
+    loadPrd(); loadProjects();
+  } catch(e) { showBanner('err', e.message); }
+}
+
+async function genTasks() {
+  if (!currentProject) return;
+  showBanner('ok', 'AI 正在拆解研发任务，请稍候…');
+  try {
+    const task = await api(`/projects/${currentProject.id}/tasks`,'POST');
+    await pollTask(task.id, () => {
+      showBanner('ok','任务已生成！确认后进入资料包导出');
+      loadTasks();
+    });
+  } catch(e) { showBanner('err', e.message); }
+}
+
+async function loadTasks() {
+  if (!currentProject) return;
+  try {
+    const tasks = await api(`/projects/${currentProject.id}/tasks`);
+    if (!tasks.length) { $('tasks').innerHTML='<div class="muted">尚未生成任务，点上方「生成研发任务」。</div>'; return; }
+    $('tasks').innerHTML = tasks.map(t=>`
+      <div class="q">
+        <div class="d"><span class="badge ${t.priority==='P0'?'must':''}">${t.priority}</span> <span class="badge">${t.module}</span> ${t.title}</div>
+        <div style="font-size:13px;margin:4px 0">${t.description||''}</div>
+        ${t.acceptance_criteria?`<div class="hint">验收：${t.acceptance_criteria}</div>`:''}
+        ${(t.dependencies||[]).length?`<div class="hint">依赖：${t.dependencies.join('、')}</div>`:''}
+        ${(t.source_refs||[]).length?`<div class="hint">来源：${t.source_refs.join('、')}</div>`:''}
+        <div style="margin-top:6px"><button class="ghost" onclick="editTask('${t.id}')">编辑</button> <button class="ghost" onclick="deleteTask('${t.id}')">删除</button></div>
+      </div>`).join('') +
+      `<button class="green" onclick="confirmTasks()">确认任务（进入资料包导出）</button>`;
+  } catch(e) { $('tasks').innerHTML='<div class="muted">尚未生成任务。</div>'; }
+}
+
+async function editTask(tid) {
+  try {
+    const tasks = await api(`/projects/${currentProject.id}/tasks`);
+    const t = tasks.find(x => x.id === tid);
+    if (!t) { showBanner('err','任务不存在'); return; }
+    const title = prompt('任务标题：', t.title);
+    if (title === null) return;
+    const priority = prompt('优先级（P0/P1/P2）：', t.priority) || t.priority;
+    await api(`/projects/${currentProject.id}/tasks/${tid}`,'PATCH',{title, priority});
+    showBanner('ok','任务已更新');
+    loadTasks();
+  } catch(e) { showBanner('err', e.message); }
+}
+
+async function deleteTask(tid) {
+  if (!confirm('确认删除这个任务？（删除后不可恢复）')) return;
+  try {
+    await api(`/projects/${currentProject.id}/tasks/${tid}`,'DELETE');
+    showBanner('ok','任务已删除');
+    loadTasks();
+  } catch(e) { showBanner('err', e.message); }
+}
+
+async function confirmTasks() {
+  try {
+    await api(`/projects/${currentProject.id}/tasks`,'PUT');
+    showBanner('ok','✅ 任务已确认，进入资料包导出');
+    $('step7').classList.add('done');
+    loadProjects();
+  } catch(e) { showBanner('err', e.message); }
+}
+
+let lastExport = { title: '', content: '' };
+
+async function exportProject(channel) {
+  if (!currentProject) { showBanner('err', '请先选择项目'); return; }
+  showBanner('ok', '正在生成资料包…');
+  try {
+    const d = await api(`/projects/${currentProject.id}/export`,'POST',{channel});
+    lastExport = { title: d.title, content: d.content };
+    $('export').innerHTML = `<div class="muted" style="margin-bottom:8px">已生成「${d.title}」（${d.channel}，${d.content.length} 字）</div>` +
+      `<textarea id="export-content" readonly style="width:100%;height:360px;font-family:ui-monospace,monospace;font-size:12px">${d.content.replace(/</g,'&lt;')}</textarea>`;
+    showBanner('ok', '✅ 资料包已生成，可复制或下载');
+  } catch(e) { showBanner('err', e.message); }
+}
+
+function copyExport() {
+  const ta = $('export-content');
+  if (!ta) { showBanner('err', '请先点一个导出按钮生成资料包'); return; }
+  ta.select();
+  try { document.execCommand('copy'); showBanner('ok', '已复制全文到剪贴板'); }
+  catch(e) { showBanner('err', '复制失败，请手动全选复制'); }
+}
+
+function downloadExport() {
+  if (!lastExport.content) { showBanner('err', '请先点一个导出按钮生成资料包'); return; }
+  const blob = new Blob([lastExport.content], {type: 'text/markdown;charset=utf-8'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = (lastExport.title || '项目资料包').replace(/[\\/:*?"<>|]/g,'_') + '.md';
+  a.click();
+  URL.revokeObjectURL(a.href);
+  showBanner('ok', '已开始下载');
+}
+
+async function submitFeedback() {
+  if (!currentProject) { showBanner('err', '请先选择项目'); return; }
+  const content = $('fb-content')?.value || '';
+  if (!content) { showBanner('err', '请输入反馈内容'); return; }
+  try {
+    await api(`/projects/${currentProject.id}/feedback`,'POST',{content, author_type:'user'});
+    $('fb-content').value = '';
+    showBanner('ok','反馈已提交');
+    loadFeedback();
+  } catch(e) { showBanner('err', e.message); }
+}
+
+async function loadFeedback() {
+  if (!currentProject) return;
+  try {
+    const list = await api(`/projects/${currentProject.id}/feedback`);
+    $('feedback-list').innerHTML = list.length
+      ? '<div style="font-size:13px;font-weight:600;margin:8px 0">反馈</div>' + list.map(f=>
+          `<div class="q"><div class="d">[${f.author_type}] ${f.content}${f.affected_sections?` <span class="badge">${f.affected_sections}</span>`:''}</div></div>`).join('')
+      : '<div class="muted">暂无反馈</div>';
+    const decisions = await api(`/projects/${currentProject.id}/decisions`);
+    $('decision-list').innerHTML = decisions.length
+      ? '<div style="font-size:13px;font-weight:600;margin:8px 0">决策台账</div>' + decisions.map(d=>
+          `<div class="q"><div class="d">${d.decision} <span class="badge">${d.source}</span></div>${d.reason?`<div class="hint">${d.reason}</div>`:''}</div>`).join('')
+      : '<div class="muted">暂无决策</div>';
+  } catch(e) { showBanner('err', e.message); }
+}
+
+loadSamples(); loadProjects();
+</script>
+</body>
+</html>
