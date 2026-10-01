@@ -18,11 +18,11 @@
     <g shape-rendering="crispEdges">
       <path fill="#F4A92B" d="M450 212h84v84h-84z"/><path fill="#FFD45A" d="M458 220h68v68h-68z"/><path fill="#F4A92B" d="M466 228h52v52h-52z"/>
       <text x="480" y="270" fill="#8B4B13" font-family="monospace" font-size="42" font-weight="800">?</text>
-      <path fill="#FFE66D" d="M538 248h12v-8h8v8h8v12h-8v8h-8v-8h-12z"/>
+      <path fill="#FFE66D" d="M538 248h20v-8h8v8h8v8h-8v8h-8v-8h-20z"/>
       <path fill="#8A4B27" d="M576 212h84v84h-84z"/><path fill="#C87938" d="M584 220h68v16h-68zm10 26h48v42h-48z"/>
-      <path fill="#FFE66D" d="M666 248h12v-8h8v8h8v12h-8v8h-8v-8h-12z"/>
+      <path fill="#FFE66D" d="M666 248h20v-8h8v8h8v8h-8v8h-8v-8h-20z"/>
       <path fill="#8A4B27" d="M702 212h84v84h-84z"/><path fill="#C87938" d="M710 220h68v16h-68zm10 26h48v42h-48z"/>
-      <path fill="#FFE66D" d="M792 248h12v-8h8v8h8v12h-8v8h-8v-8h-12z"/>
+      <path fill="#FFE66D" d="M792 248h20v-8h8v8h8v8h-8v8h-8v-8h-20z"/>
       <path fill="#F4A92B" d="M828 212h84v84h-84z"/><path fill="#FFD45A" d="M836 220h68v68h-68z"/>
       <path fill="#7EF7C8" d="M850 265h8v15h-8zm17-20h8v35h-8zm17-12h8v47h-8z"/>
     </g>
