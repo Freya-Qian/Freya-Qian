@@ -22,16 +22,8 @@ Products and tools built through an AI product lens.
 
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <h3>🏍️ <a href="https://github.com/MN0709/MotoViz">MotoViz</a></h3>
-      <p>An AI product exploration project for motorcycle-related scenarios.</p>
-      <p>Combines product thinking, AI workflows, and practical user experience design.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>🧠 <a href="projects/ProdForge-AI/README.md">ProdForge AI</a></h3>
-      <p>An AI product incubation workbench for turning early ideas into validated requirements, positioning, PRDs, and development plans.</p>
-      <p>From idea clarification to competitor evidence, product definition, and developer handoff.</p>
-    </td>
+    <td width="50%" valign="top"><a href="https://github.com/MN0709/MotoViz"><img src="assets/project-cards/motoviz.svg" alt="MotoViz project card" width="100%"></a></td>
+    <td width="50%" valign="top"><a href="projects/ProdForge-AI/README.md"><img src="assets/project-cards/prodforge-ai.svg" alt="ProdForge AI project card" width="100%"></a></td>
   </tr>
 </table>
 
