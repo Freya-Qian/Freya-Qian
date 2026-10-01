@@ -13,15 +13,15 @@
     <path fill="#FFE66D" d="M0 370h960v12H0z"/>
     <path fill="#9A5A2E" d="M0 382h960v138H0z"/>
     <path fill="#C87938" d="M48 406h56v12H48zm136 36h56v12h-56zm136-36h56v12h-56zm136 36h56v12h-56zm136-36h56v12h-56zm136 36h56v12h-56zm136-36h56v12h-56z"/>
-    <ellipse cx="730" cy="368" rx="240" ry="13" fill="#173F35" opacity=".24"/>
+    <path fill="#8A4B27" d="M464 296h424v17H464z"/>
+    <path fill="#C87938" d="M464 296h424v6H464z"/>
     <g shape-rendering="crispEdges">
-      <path fill="#F4A92B" d="M506 154h96v96h-96z"/><path fill="#FFD45A" d="M515 163h78v78h-78z"/><path fill="#F4A92B" d="M524 172h60v60h-60z"/>
-      <text x="540" y="220" fill="#8B4B13" font-family="monospace" font-size="48" font-weight="800">?</text>
-      <path fill="#FFE66D" d="M619 190h18v18h-18zm20 17h18v18h-18zm20 17h18v18h-18z"/>
-      <path fill="#8A4B27" d="M680 218h84v84h-84z"/><path fill="#C87938" d="M689 227h66v16h-66zm11 27h44v39h-44z"/>
-      <path fill="#8A4B27" d="M772 218h84v84h-84z"/><path fill="#C87938" d="M781 227h66v16h-66zm11 27h44v39h-44z"/>
-      <path fill="#F4A92B" d="M866 266h80v80h-80z"/><path fill="#FFD45A" d="M875 275h62v62h-62z"/>
-      <path fill="#7EF7C8" d="M889 313h8v15h-8zm17-20h8v35h-8zm17-12h8v47h-8z"/>
+      <path fill="#F4A92B" d="M480 212h84v84h-84z"/><path fill="#FFD45A" d="M488 220h68v68h-68z"/><path fill="#F4A92B" d="M496 228h52v52h-52z"/>
+      <text x="510" y="270" fill="#8B4B13" font-family="monospace" font-size="42" font-weight="800">?</text>
+      <path fill="#8A4B27" d="M582 212h84v84h-84z"/><path fill="#C87938" d="M590 220h68v16h-68zm10 26h48v42h-48z"/>
+      <path fill="#8A4B27" d="M684 212h84v84h-84z"/><path fill="#C87938" d="M692 220h68v16h-68zm10 26h48v42h-48z"/>
+      <path fill="#F4A92B" d="M786 212h84v84h-84z"/><path fill="#FFD45A" d="M794 220h68v68h-68z"/>
+      <path fill="#7EF7C8" d="M808 265h8v15h-8zm17-20h8v35h-8zm17-12h8v47h-8z"/>
     </g>
     <g transform="translate(48 46)">
       <path fill="#101820" d="M0 0h390v151H0z"/><path fill="#23384A" d="M0 0h390v14H0zm0 137h390v14H0z"/>
