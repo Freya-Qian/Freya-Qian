@@ -48,6 +48,10 @@ A workflow for checking and analyzing structured data, tracing findings to evide
 
 A provider-aware workflow for turning an image brief into generated or edited assets, with reference-role tracking, visual QA, focused iteration, and reproducible delivery notes.
 
+### [模型测评](skills/model-evaluation/README.md)
+
+An independent workflow for evaluating a newly released or user-provided model and describing its strengths, weaknesses, and suitable use cases from task-based evidence.
+
 ---
 
 ## ✍️ 最近在写

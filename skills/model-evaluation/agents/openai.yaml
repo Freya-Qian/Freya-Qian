@@ -1,0 +1,3 @@
+interface:
+  display_name: "模型测评"
+  short_description: "独立评估模型强项、弱项和适用场景"
