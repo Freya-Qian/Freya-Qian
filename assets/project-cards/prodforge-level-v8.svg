@@ -14,7 +14,7 @@
     <path fill="#9A5A2E" d="M0 382h960v138H0z"/>
     <path fill="#C87938" d="M48 406h56v12H48zm136 36h56v12h-56zm136-36h56v12h-56zm136 36h56v12h-56zm136-36h56v12h-56zm136 36h56v12h-56zm136-36h56v12h-56z"/>
     <ellipse cx="696" cy="368" rx="192" ry="13" fill="#173F35" opacity=".24"/>
-    <g transform="translate(520 142)">
+    <g transform="translate(470 72) scale(1.12)">
       <path fill="#F4A92B" d="M0 0h104v104H0z"/><path fill="#FFD45A" d="M10 10h84v84H10z"/><path fill="#F4A92B" d="M20 20h64v64H20z"/>
       <text x="35" y="73" fill="#8B4B13" font-family="monospace" font-size="58" font-weight="800">?</text>
       <path fill="#8A4B27" d="M120 60h88v88h-88z"/><path fill="#C87938" d="M130 70h68v18h-68zm10 30h58v38h-58z"/>
