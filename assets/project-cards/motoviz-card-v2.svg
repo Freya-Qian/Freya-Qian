@@ -4,7 +4,7 @@
     <filter id="shadow" x="5%" y="5%" width="90%" height="100%"><feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#1C3550" flood-opacity=".2"/></filter>
   </defs>
   <rect width="960" height="540" rx="28" fill="url(#sky)"/>
-  <g opacity=".9" fill="#fff"><path d="M92 81h54a22 22 0 0 1 22 22H72a20 20 0 0 1 20-22Zm31-20h35a20 20 0 0 1 20 20h-73a18 18 0 0 1 18-20Z"/><path d="M777 89h48a20 20 0 0 1 20 20h-87a19 19 0 0 1 19-20Zm28-19h33a19 19 0 0 1 19 19h-69a17 17 0 0 1 17-19Z"/></g>
+  <g transform="translate(0 -45)" opacity=".9" fill="#fff"><path d="M92 81h54a22 22 0 0 1 22 22H72a20 20 0 0 1 20-22Zm31-20h35a20 20 0 0 1 20 20h-73a18 18 0 0 1 18-20Z"/><path d="M777 89h48a20 20 0 0 1 20 20h-87a19 19 0 0 1 19-20Zm28-19h33a19 19 0 0 1 19 19h-69a17 17 0 0 1 17-19Z"/></g>
   <rect x="82" y="112" width="796" height="332" rx="18" fill="#101820" stroke="#23384A" stroke-width="4" filter="url(#shadow)"/>
   <path d="M100 112h760a18 18 0 0 1 18 18v31H82v-31a18 18 0 0 1 18-18Z" fill="#172434"/>
   <circle cx="116" cy="132" r="7" fill="#FF6262"/><circle cx="140" cy="132" r="7" fill="#FFC83D"/><circle cx="164" cy="132" r="7" fill="#39D98A"/>

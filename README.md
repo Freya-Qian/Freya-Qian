@@ -20,12 +20,10 @@ It is the lens for understanding systems, evaluating opportunities, and making b
 
 Products and tools built through an AI product lens.
 
-<table>
-  <tr>
-    <td width="50%" valign="top"><a href="https://github.com/MN0709/MotoViz"><img src="assets/project-cards/motoviz-pixel.svg" alt="MotoViz project card" width="100%"></a></td>
-    <td width="50%" valign="top"><a href="projects/ProdForge-AI/README.md"><img src="assets/project-cards/prodforge-ai-pixel.svg" alt="ProdForge AI project card" width="100%"></a></td>
-  </tr>
-</table>
+<p align="center">
+  <a href="https://github.com/MN0709/MotoViz"><img src="assets/project-cards/motoviz-card-v2.svg" alt="MotoViz project card" width="49%"></a>
+  <a href="projects/ProdForge-AI/README.md"><img src="assets/project-cards/prodforge-ai-card-v2.svg" alt="ProdForge AI project card" width="49%"></a>
+</p>
 
 ## 🧰 AI Skills
 
