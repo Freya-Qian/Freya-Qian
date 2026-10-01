@@ -13,13 +13,15 @@
     <path fill="#FFE66D" d="M0 370h960v12H0z"/>
     <path fill="#9A5A2E" d="M0 382h960v138H0z"/>
     <path fill="#C87938" d="M48 406h56v12H48zm136 36h56v12h-56zm136-36h56v12h-56zm136 36h56v12h-56zm136-36h56v12h-56zm136 36h56v12h-56zm136-36h56v12h-56z"/>
-    <ellipse cx="696" cy="368" rx="192" ry="13" fill="#173F35" opacity=".24"/>
-    <g transform="translate(470 72) scale(1.12)">
-      <path fill="#F4A92B" d="M0 0h104v104H0z"/><path fill="#FFD45A" d="M10 10h84v84H10z"/><path fill="#F4A92B" d="M20 20h64v64H20z"/>
-      <text x="35" y="73" fill="#8B4B13" font-family="monospace" font-size="58" font-weight="800">?</text>
-      <path fill="#8A4B27" d="M120 60h88v88h-88z"/><path fill="#C87938" d="M130 70h68v18h-68zm10 30h58v38h-58z"/>
-      <path fill="#8A4B27" d="M224 60h88v88h-88z"/><path fill="#C87938" d="M234 70h68v18h-68zm10 30h58v38h-58z"/>
-      <path fill="#F4A92B" d="M120 164h88v88h-88z"/><path fill="#FFD45A" d="M130 174h68v68h-68z"/><path fill="#7EF7C8" d="M146 218h10v12h-10zm22-24h10v36h-10zm22-16h10v52h-10z"/>
+    <ellipse cx="485" cy="368" rx="350" ry="13" fill="#173F35" opacity=".24"/>
+    <g shape-rendering="crispEdges">
+      <path fill="#F4A92B" d="M104 157h112v112H104z"/><path fill="#FFD45A" d="M114 167h92v92h-92z"/><path fill="#F4A92B" d="M124 177h72v72h-72z"/>
+      <text x="143" y="232" fill="#8B4B13" font-family="monospace" font-size="58" font-weight="800">?</text>
+      <path fill="#FFE66D" d="M248 205h24v18h-24zm26 18h22v18h-22zm24 18h24v18h-24z"/>
+      <path fill="#8A4B27" d="M350 218h92v92h-92z"/><path fill="#C87938" d="M360 228h72v18h-72zm12 30h48v42h-48z"/>
+      <path fill="#8A4B27" d="M458 218h92v92h-92z"/><path fill="#C87938" d="M468 228h72v18h-72zm12 30h48v42h-48z"/>
+      <path fill="#F4A92B" d="M660 251h92v92h-92z"/><path fill="#FFD45A" d="M670 261h72v72h-72z"/>
+      <path fill="#7EF7C8" d="M686 307h10v16h-10zm22-24h10v40h-10zm22-14h10v54h-10z"/>
     </g>
     <path fill="#101820" d="M48 346h390v151H48z"/><path fill="#23384A" d="M48 346h390v14H48zm0 137h390v14H48z"/>
     <path fill="#FF6262" d="M66 370h12v12H66z"/><path fill="#FFC83D" d="M86 370h12v12H86z"/><path fill="#39D98A" d="M106 370h12v12h-12z"/>
