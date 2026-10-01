@@ -13,18 +13,15 @@
     <path fill="#FFE66D" d="M0 370h960v12H0z"/>
     <path fill="#9A5A2E" d="M0 382h960v138H0z"/>
     <path fill="#C87938" d="M48 406h56v12H48zm136 36h56v12h-56zm136-36h56v12h-56zm136 36h56v12h-56zm136-36h56v12h-56zm136 36h56v12h-56zm136-36h56v12h-56z"/>
-    <path fill="#8A4B27" d="M436 296h492v17H436z"/>
-    <path fill="#C87938" d="M436 296h492v6H436z"/>
+    <path fill="#8A4B27" d="M464 296h424v17H464z"/>
+    <path fill="#C87938" d="M464 296h424v6H464z"/>
     <g shape-rendering="crispEdges">
-      <path fill="#F4A92B" d="M450 212h84v84h-84z"/><path fill="#FFD45A" d="M458 220h68v68h-68z"/><path fill="#F4A92B" d="M466 228h52v52h-52z"/>
-      <text x="480" y="270" fill="#8B4B13" font-family="monospace" font-size="42" font-weight="800">?</text>
-      <path fill="#FFE66D" d="M538 248h20v-8h8v8h8v8h-8v8h-8v-8h-20z"/>
-      <path fill="#8A4B27" d="M576 212h84v84h-84z"/><path fill="#C87938" d="M584 220h68v16h-68zm10 26h48v42h-48z"/>
-      <path fill="#FFE66D" d="M666 248h20v-8h8v8h8v8h-8v8h-8v-8h-20z"/>
-      <path fill="#8A4B27" d="M702 212h84v84h-84z"/><path fill="#C87938" d="M710 220h68v16h-68zm10 26h48v42h-48z"/>
-      <path fill="#FFE66D" d="M792 248h20v-8h8v8h8v8h-8v8h-8v-8h-20z"/>
-      <path fill="#F4A92B" d="M828 212h84v84h-84z"/><path fill="#FFD45A" d="M836 220h68v68h-68z"/>
-      <path fill="#7EF7C8" d="M850 265h8v15h-8zm17-20h8v35h-8zm17-12h8v47h-8z"/>
+      <path fill="#F4A92B" d="M480 212h84v84h-84z"/><path fill="#FFD45A" d="M488 220h68v68h-68z"/><path fill="#F4A92B" d="M496 228h52v52h-52z"/>
+      <text x="510" y="270" fill="#8B4B13" font-family="monospace" font-size="42" font-weight="800">?</text>
+      <path fill="#8A4B27" d="M582 212h84v84h-84z"/><path fill="#C87938" d="M590 220h68v16h-68zm10 26h48v42h-48z"/>
+      <path fill="#8A4B27" d="M684 212h84v84h-84z"/><path fill="#C87938" d="M692 220h68v16h-68zm10 26h48v42h-48z"/>
+      <path fill="#F4A92B" d="M786 212h84v84h-84z"/><path fill="#FFD45A" d="M794 220h68v68h-68z"/>
+      <path fill="#7EF7C8" d="M808 265h8v15h-8zm17-20h8v35h-8zm17-12h8v47h-8z"/>
     </g>
     <g transform="translate(48 46)">
       <path fill="#101820" d="M0 0h390v151H0z"/><path fill="#23384A" d="M0 0h390v14H0zm0 137h390v14H0z"/>
