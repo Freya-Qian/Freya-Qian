@@ -5,7 +5,7 @@
 - GitHub 账户：`Freya-Qian`。
 - 正确仓库：`https://github.com/Freya-Qian/Freya-Qian`，包含 AI Skills 和公众号文章的个人主页仓库。
 - 项目源码目录：`projects/Lingyu/`。
-- 主页展示位置：独立的“项目”区，位于“最近在写”文章区上方。
+- 主页展示位置：独立的“项目”区，位于 AI Skills 上方；区块顺序为精选项目 → 项目 → AI Skills → 最近在写。
 - 精选项目继续保留 MotoViz 和 ProdForge AI；灵屿放在普通项目区。
 - 普通项目使用卡片，必须与精选区的大型像素关卡卡片有明显区分。
 - 原作者仓库 `xiaopu-ai/TO-DO-Panel` 仅为来源，不是本次提交目标。

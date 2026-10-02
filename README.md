@@ -27,6 +27,16 @@ Products and tools built through an AI product lens.
 
 <br>
 
+## 🗂️ 项目
+
+本地工具与独立探索，每个项目保留自己的内容和入口。
+
+<p>
+  <a href="projects/Lingyu/README.md"><img src="assets/project-cards/lingyu-simple-v2.svg" alt="灵屿 Lingyu：刘海屏桌面工作台项目卡片" width="48%"></a>
+</p>
+
+---
+
 ## 🧰 AI Skills
 
 ### [AI PM Skill Evaluator](skills/ai-pm-skill-evaluator/README.md)
@@ -56,16 +66,6 @@ An independent workflow for evaluating a newly released or user-provided model a
 ### [模型选型](skills/model-selector/README.md)
 
 A provider-aware workflow for recommending three suitable models for a task, comparing current pricing and tradeoffs, and marking the most recommended option. Use it to choose among models; use 模型测评 to evaluate a specific model.
-
----
-
-## 🗂️ 项目
-
-本地工具与独立探索，每个项目保留自己的内容和入口。
-
-<p>
-  <a href="projects/Lingyu/README.md"><img src="assets/project-cards/lingyu-simple-v2.svg" alt="灵屿 Lingyu：刘海屏桌面工作台项目卡片" width="48%"></a>
-</p>
 
 ---
 
