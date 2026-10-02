@@ -39,45 +39,24 @@ Products and tools built through an AI product lens.
 
 ## 🧰 AI Skills
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="skills/ai-pm-skill-evaluator/README.md">AI PM Skill Evaluator</a></h3>
-      <p>A workflow for evaluating and improving AI product management Skills. It checks package structure, activation, process adherence, evidence, safety signals, deliverable quality, regression behavior, and measured efficiency.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="skills/ai-product-opportunity-evaluator/README.md">AI Product Opportunity Evaluator</a></h3>
-      <p>A workflow for moving from product discovery evidence and alternatives to an opportunity decision, validation plan, and optional product brief.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="skills/agent-workflow-cost-diagnostician/README.md">Agent Workflow Cost Diagnostician</a></h3>
-      <p>A workflow for mapping an Agent task end to end, identifying measured and suspected cost or reliability bottlenecks, and designing quality-aware optimization experiments.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="skills/data-to-decision-brief/README.md">Data to Decision Brief</a></h3>
-      <p>A workflow for checking and analyzing structured data, tracing findings to evidence, and turning the results into a concise decision brief with caveats and optional presentation-ready visuals.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="skills/creative-image-production/README.md">Creative Image Production</a></h3>
-      <p>A provider-aware workflow for turning an image brief into generated or edited assets, with reference-role tracking, visual QA, focused iteration, and reproducible delivery notes.</p>
-    </td>
-    <td width="50%" valign="top">
-      <h3><a href="skills/model-evaluation/README.md">模型测评</a></h3>
-      <p>An independent workflow for evaluating a newly released or user-provided model and describing its strengths, weaknesses, and suitable use cases from task-based evidence.</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3><a href="skills/model-selector/README.md">模型选型</a></h3>
-      <p>A provider-aware workflow for recommending three suitable models for a task, comparing current pricing and tradeoffs, and marking the most recommended option. Use it to choose among models; use 模型测评 to evaluate a specific model.</p>
-    </td>
-    <td width="50%" valign="top"></td>
-  </tr>
-</table>
+<p>
+  <a href="skills/ai-pm-skill-evaluator/README.md"><img src="assets/skill-cards/ai-pm-skill-evaluator-v1.svg" alt="AI PM Skill Evaluator: A workflow for evaluating and improving AI product management Skills. It checks package structure, activation, process adherence, evidence, safety signals, deliverable quality, regression behavior, and measured efficiency." width="48%"></a>&nbsp;&nbsp;
+  <a href="skills/ai-product-opportunity-evaluator/README.md"><img src="assets/skill-cards/ai-product-opportunity-evaluator-v1.svg" alt="AI Product Opportunity Evaluator: A workflow for moving from product discovery evidence and alternatives to an opportunity decision, validation plan, and optional product brief." width="48%"></a>
+</p>
+
+<p>
+  <a href="skills/agent-workflow-cost-diagnostician/README.md"><img src="assets/skill-cards/agent-workflow-cost-diagnostician-v1.svg" alt="Agent Workflow Cost Diagnostician: A workflow for mapping an Agent task end to end, identifying measured and suspected cost or reliability bottlenecks, and designing quality-aware optimization experiments." width="48%"></a>&nbsp;&nbsp;
+  <a href="skills/data-to-decision-brief/README.md"><img src="assets/skill-cards/data-to-decision-brief-v1.svg" alt="Data to Decision Brief: A workflow for checking and analyzing structured data, tracing findings to evidence, and turning the results into a concise decision brief with caveats and optional presentation-ready visuals." width="48%"></a>
+</p>
+
+<p>
+  <a href="skills/creative-image-production/README.md"><img src="assets/skill-cards/creative-image-production-v1.svg" alt="Creative Image Production: A provider-aware workflow for turning an image brief into generated or edited assets, with reference-role tracking, visual QA, focused iteration, and reproducible delivery notes." width="48%"></a>&nbsp;&nbsp;
+  <a href="skills/model-evaluation/README.md"><img src="assets/skill-cards/model-evaluation-v1.svg" alt="模型测评: An independent workflow for evaluating a newly released or user-provided model and describing its strengths, weaknesses, and suitable use cases from task-based evidence." width="48%"></a>
+</p>
+
+<p>
+  <a href="skills/model-selector/README.md"><img src="assets/skill-cards/model-selector-v1.svg" alt="模型选型: A provider-aware workflow for recommending three suitable models for a task, comparing current pricing and tradeoffs, and marking the most recommended option. Use it to choose among models; use 模型测评 to evaluate a specific model." width="48%"></a>
+</p>
 
 ---
 
