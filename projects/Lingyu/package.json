@@ -1,0 +1,129 @@
+{
+  "name": "lingyu",
+  "version": "1.2.1",
+  "description": "灵屿 - a local desktop workspace for macOS and Windows",
+  "main": "main.js",
+  "author": "xiaopu-ai",
+  "license": "MIT",
+  "scripts": {
+    "test": "node scripts/test-desktop.js",
+    "start": "electron .",
+    "build": "electron-builder --mac dmg --publish never",
+    "build:win": "electron-builder --win nsis --x64 --publish never",
+    "build:zip": "electron-builder --mac zip",
+    "pack": "electron-builder --dir"
+  },
+  "devDependencies": {
+    "electron": "^44.0.0",
+    "electron-builder": "^26.15.7"
+  },
+  "build": {
+    "appId": "com.dynamicpanel.app",
+    "productName": "灵屿",
+    "artifactName": "Lingyu-${version}-${arch}.${ext}",
+    "copyright": "© 2026 xiaopu-ai",
+    "asar": false,
+    "directories": {
+      "output": "dist.noindex",
+      "buildResources": "build"
+    },
+    "afterPack": "./build/afterPack.js",
+    "files": [
+      "main.js",
+      "main-services.js",
+      "vendor/**/*",
+      "platform.js",
+      "build/to-do-panel-icon.png",
+      "preload.js",
+      "renderer/**/*",
+      "scripts/codex-notify.js",
+      "scripts/claude-notify.js",
+      "package.json",
+      "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}",
+      "!**/node_modules/.bin",
+      "!**/{.DS_Store,.git,.hg,.svn,CVS,RCS,SCCS,.gitignore,.gitattributes}",
+      "LICENSE"
+    ],
+    "mac": {
+      "icon": "build/to-do-panel-icon.icns",
+      "category": "public.app-category.productivity",
+      "minimumSystemVersion": "13.0",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64"
+          ]
+        }
+      ],
+      "hardenedRuntime": true,
+      "gatekeeperAssess": false,
+      "entitlements": "build/entitlements.mac.plist",
+      "entitlementsInherit": "build/entitlements.mac.plist",
+      "darkModeSupport": true,
+      "extendInfo": {
+        "LSUIElement": true,
+        "NSHighResolutionCapable": true,
+        "CFBundleDisplayName": "灵屿",
+        "NSCameraUsageDescription": "灵屿需要使用摄像头来显示「镜子」预览。",
+        "NSMicrophoneUsageDescription": "灵屿需要使用麦克风来录音并生成转写文本。",
+        "NSAppleEventsUsageDescription": "灵屿需要控制「系统事件」来枚举并聚焦当前窗口、发送 QQ 音乐快捷键。"
+      }
+    },
+    "win": {
+      "icon": "build/to-do-panel-icon.png",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "Lingyu-${version}-windows-${arch}-setup.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "runAfterFinish": false,
+      "deleteAppDataOnUninstall": false
+    },
+    "dmg": {
+      "title": "灵屿 ${version}",
+      "iconSize": 100,
+      "contents": [
+        {
+          "x": 130,
+          "y": 220
+        },
+        {
+          "x": 410,
+          "y": 220,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ],
+      "window": {
+        "width": 540,
+        "height": 380
+      }
+    }
+  },
+  "dependencies": {
+    "ws": "^8.21.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Freya-Qian/Freya-Qian.git",
+    "directory": "projects/Lingyu"
+  },
+  "homepage": "https://github.com/Freya-Qian/Freya-Qian/tree/main/projects/Lingyu",
+  "bugs": {
+    "url": "https://github.com/Freya-Qian/Freya-Qian/issues"
+  }
+}

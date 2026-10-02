@@ -55,6 +55,16 @@ An independent workflow for evaluating a newly released or user-provided model a
 
 ---
 
+## 🗂️ 项目
+
+本地工具与独立探索，每个项目保留自己的内容和入口。
+
+<p>
+  <a href="projects/Lingyu/README.md"><img src="assets/project-cards/lingyu-compact-v1.svg" alt="灵屿 Lingyu：刘海屏桌面工作台项目卡片" width="48%"></a>
+</p>
+
+---
+
 ## ✍️ 最近在写
 
 I write about AI products through an engineering and product lens.
