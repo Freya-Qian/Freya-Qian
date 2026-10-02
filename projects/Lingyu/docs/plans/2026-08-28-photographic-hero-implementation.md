@@ -114,4 +114,3 @@ Expected: tests, ESLint, and production build all exit 0.
 **Step 6: Perform browser visual verification**
 
 Inspect at the default desktop viewport, a 1280 × 720 low-height desktop viewport, and a 390 × 844 mobile viewport. Verify layer alignment, title occlusion, single-line copy, both panel states, no horizontal overflow, and no console errors.
-

@@ -3,7 +3,7 @@
   ============================================================
   通过 @docs/workflow.md 被 CLAUDE.md 引用。
   定义了从需求到上线的完整 vibe coding 流程。
-  
+
   核心理念（来自中文技术社区）：
   - Vibe Coding 正在演进为 Spec-Driven Development
   - "先写规格再编码"比"边想边写"质量高 10 倍

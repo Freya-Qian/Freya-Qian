@@ -352,4 +352,3 @@ Confirm Magnet, marquee translation, character reveals, and Tab scale transforms
 Run: `git diff --check && git status --short && git diff --stat main...HEAD`
 
 Expected: no whitespace errors and only website redesign files plus the two approved plan documents.
-
