@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="252" viewBox="0 0 960 252" role="img" aria-labelledby="title desc">
+  <title id="title">基础单价没降，Agent任务成本为什么最多能降约45%</title>
+  <desc id="desc">Agent Cost · Workflow Design。模型基础单价不变，任务成本仍然可能下降。关键不只在价格，而在任务拆解、上下文管理和执行链路的重新设计。</desc>
+  <rect x="1" y="1" width="958" height="250" rx="24" fill="#101820" stroke="#2D4356" stroke-width="2"/>
+  <g font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <text font-size="26" font-weight="700" fill="#E9EEF7">
+    <tspan x="48" y="52">基础单价没降，Agent任务成本为什么最多能降约45%</tspan>
+    </text>
+    <text x="48" y="114" font-size="16" fill="#7D94A8">Agent Cost · Workflow Design</text>
+    <text font-size="21" fill="#AFBFCD">
+    <tspan x="48" y="151">模型基础单价不变，任务成本仍然可能下降。关键不只在价格，而在任务拆解、上下文管理和</tspan>
+    <tspan x="48" y="181">执行链路的重新设计。</tspan>
+    </text>
+    <text x="48" y="222" font-size="18" fill="#70D9EC">继续读 →</text>
+  </g>
+</svg>

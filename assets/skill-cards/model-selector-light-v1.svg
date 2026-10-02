@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+  <title id="title">模型选型</title>
+  <desc id="desc">A provider-aware workflow for recommending three suitable models for a task, comparing current pricing and tradeoffs, and marking the most recommended option. Use it to choose among models; use 模型测评 to evaluate a specific model.</desc>
+  <rect x="1" y="1" width="958" height="418" rx="28" fill="#F6F8FA" stroke="#D8DEE4" stroke-width="2"/>
+  <g font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <text x="48" y="76" font-size="36" font-weight="700" fill="#0969DA">模型选型</text>
+    <text font-size="28" fill="#4B5D70">
+    <tspan x="48" y="134">A provider-aware workflow for recommending three suitable</tspan>
+    <tspan x="48" y="170">models for a task, comparing current pricing and</tspan>
+    <tspan x="48" y="206">tradeoffs, and marking the most recommended option. Use it</tspan>
+    <tspan x="48" y="242">to choose among models; use 模型测评 to evaluate a specific</tspan>
+    <tspan x="48" y="278">model.</tspan>
+    </text>
+    <text x="48" y="376" font-size="26" fill="#087F9B">查看 Skill →</text>
+  </g>
+</svg>

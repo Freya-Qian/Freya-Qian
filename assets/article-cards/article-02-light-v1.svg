@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="252" viewBox="0 0 960 252" role="img" aria-labelledby="title desc">
+  <title id="title">一部短剧没有演员，评论区却多了一群失恋的人</title>
+  <desc id="desc">AI Content · User Emotion。一部没有真人演员的短剧，依然让用户投入情绪。这里值得看的不是生成技术本身，而是 AI 内容如何触发真实的观看、投射和讨论。</desc>
+  <rect x="1" y="1" width="958" height="250" rx="24" fill="#F6F8FA" stroke="#D8DEE4" stroke-width="2"/>
+  <g font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <text font-size="26" font-weight="700" fill="#1F2937">
+    <tspan x="48" y="52">一部短剧没有演员，评论区却多了一群失恋的人</tspan>
+    </text>
+    <text x="48" y="114" font-size="16" fill="#627487">AI Content · User Emotion</text>
+    <text font-size="21" fill="#4B5D70">
+    <tspan x="48" y="151">一部没有真人演员的短剧，依然让用户投入情绪。这里值得看的不是生成技术本身，而是 AI</tspan>
+    <tspan x="48" y="181"> 内容如何触发真实的观看、投射和讨论。</tspan>
+    </text>
+    <text x="48" y="222" font-size="18" fill="#087F9B">继续读 →</text>
+  </g>
+</svg>

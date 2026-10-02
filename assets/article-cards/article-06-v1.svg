@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="252" viewBox="0 0 960 252" role="img" aria-labelledby="title desc">
+  <title id="title">榜单第一离可用Agent还有多远，拆开MiniCPM5-2B的成绩单</title>
+  <desc id="desc">Evaluation · Agent Usability。榜单成绩回答的是模型在测试里表现如何，产品还要追问：它离真实可用、稳定交付和可控失败到底还有多远。</desc>
+  <rect x="1" y="1" width="958" height="250" rx="24" fill="#101820" stroke="#2D4356" stroke-width="2"/>
+  <g font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <text font-size="26" font-weight="700" fill="#E9EEF7">
+    <tspan x="48" y="52">榜单第一离可用Agent还有多远，拆开MiniCPM5-2B的成绩单</tspan>
+    </text>
+    <text x="48" y="114" font-size="16" fill="#7D94A8">Evaluation · Agent Usability</text>
+    <text font-size="21" fill="#AFBFCD">
+    <tspan x="48" y="151">榜单成绩回答的是模型在测试里表现如何，产品还要追问：它离真实可用、稳定交付和可控失</tspan>
+    <tspan x="48" y="181">败到底还有多远。</tspan>
+    </text>
+    <text x="48" y="222" font-size="18" fill="#70D9EC">继续读 →</text>
+  </g>
+</svg>

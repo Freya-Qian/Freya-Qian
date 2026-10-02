@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+  <title id="title">AI PM Skill Evaluator</title>
+  <desc id="desc">A workflow for evaluating and improving AI product management Skills. It checks package structure, activation, process adherence, evidence, safety signals, deliverable quality, regression behavior, and measured efficiency.</desc>
+  <rect x="1" y="1" width="958" height="418" rx="28" fill="#F6F8FA" stroke="#D8DEE4" stroke-width="2"/>
+  <g font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <text x="48" y="76" font-size="36" font-weight="700" fill="#0969DA">AI PM Skill Evaluator</text>
+    <text font-size="28" fill="#4B5D70">
+    <tspan x="48" y="134">A workflow for evaluating and improving AI product</tspan>
+    <tspan x="48" y="170">management Skills. It checks package structure,</tspan>
+    <tspan x="48" y="206">activation, process adherence, evidence, safety signals,</tspan>
+    <tspan x="48" y="242">deliverable quality, regression behavior, and measured</tspan>
+    <tspan x="48" y="278">efficiency.</tspan>
+    </text>
+    <text x="48" y="376" font-size="26" fill="#087F9B">查看 Skill →</text>
+  </g>
+</svg>

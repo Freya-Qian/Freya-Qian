@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="252" viewBox="0 0 960 252" role="img" aria-labelledby="title desc">
+  <title id="title">多数Agent测试超过V4 Pro，DeepSeek V4.1 Flash赢在模型还是脚手架</title>
+  <desc id="desc">Benchmark · Product System。当 Agent 测试结果超过预期，问题就不只是模型强不强，也要拆开看脚手架、工具链和评测方式贡献了多少。</desc>
+  <rect x="1" y="1" width="958" height="250" rx="24" fill="#101820" stroke="#2D4356" stroke-width="2"/>
+  <g font-family="Arial, 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <text font-size="26" font-weight="700" fill="#E9EEF7">
+    <tspan x="48" y="52">多数Agent测试超过V4 Pro，DeepSeek V4.1 Flash赢在模型还是脚</tspan>
+    <tspan x="48" y="84">手架</tspan>
+    </text>
+    <text x="48" y="114" font-size="16" fill="#7D94A8">Benchmark · Product System</text>
+    <text font-size="21" fill="#AFBFCD">
+    <tspan x="48" y="151">当 Agent 测试结果超过预期，问题就不只是模型强不强，也要拆开看脚手架、工具链和评</tspan>
+    <tspan x="48" y="181">测方式贡献了多少。</tspan>
+    </text>
+    <text x="48" y="222" font-size="18" fill="#70D9EC">继续读 →</text>
+  </g>
+</svg>

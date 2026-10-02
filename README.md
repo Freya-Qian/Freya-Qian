@@ -32,7 +32,7 @@ Products and tools built through an AI product lens.
 本地工具与独立探索，每个项目保留自己的内容和入口。
 
 <p>
-  <a href="projects/Lingyu/README.md"><img src="assets/project-cards/lingyu-simple-v3.svg" alt="灵屿 Lingyu：刘海屏桌面工作台项目卡片" width="48%"></a>
+  <a href="projects/Lingyu/README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-cards/lingyu-simple-v3.svg"><source media="(prefers-color-scheme: light)" srcset="assets/project-cards/lingyu-simple-light-v3.svg"><img src="assets/project-cards/lingyu-simple-light-v3.svg" alt="灵屿 Lingyu：刘海屏桌面工作台项目卡片" width="48%"></picture></a>
 </p>
 
 ---
@@ -40,22 +40,22 @@ Products and tools built through an AI product lens.
 ## 🧰 AI Skills
 
 <p>
-  <a href="skills/ai-pm-skill-evaluator/README.md"><img src="assets/skill-cards/ai-pm-skill-evaluator-v1.svg" alt="AI PM Skill Evaluator: A workflow for evaluating and improving AI product management Skills. It checks package structure, activation, process adherence, evidence, safety signals, deliverable quality, regression behavior, and measured efficiency." width="48%"></a>&nbsp;&nbsp;
-  <a href="skills/ai-product-opportunity-evaluator/README.md"><img src="assets/skill-cards/ai-product-opportunity-evaluator-v1.svg" alt="AI Product Opportunity Evaluator: A workflow for moving from product discovery evidence and alternatives to an opportunity decision, validation plan, and optional product brief." width="48%"></a>
+  <a href="skills/ai-pm-skill-evaluator/README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/skill-cards/ai-pm-skill-evaluator-v1.svg"><source media="(prefers-color-scheme: light)" srcset="assets/skill-cards/ai-pm-skill-evaluator-light-v1.svg"><img src="assets/skill-cards/ai-pm-skill-evaluator-light-v1.svg" alt="AI PM Skill Evaluator: A workflow for evaluating and improving AI product management Skills. It checks package structure, activation, process adherence, evidence, safety signals, deliverable quality, regression behavior, and measured efficiency." width="48%"></picture></a>&nbsp;&nbsp;
+  <a href="skills/ai-product-opportunity-evaluator/README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/skill-cards/ai-product-opportunity-evaluator-v1.svg"><source media="(prefers-color-scheme: light)" srcset="assets/skill-cards/ai-product-opportunity-evaluator-light-v1.svg"><img src="assets/skill-cards/ai-product-opportunity-evaluator-light-v1.svg" alt="AI Product Opportunity Evaluator: A workflow for moving from product discovery evidence and alternatives to an opportunity decision, validation plan, and optional product brief." width="48%"></picture></a>
 </p>
 
 <p>
-  <a href="skills/agent-workflow-cost-diagnostician/README.md"><img src="assets/skill-cards/agent-workflow-cost-diagnostician-v1.svg" alt="Agent Workflow Cost Diagnostician: A workflow for mapping an Agent task end to end, identifying measured and suspected cost or reliability bottlenecks, and designing quality-aware optimization experiments." width="48%"></a>&nbsp;&nbsp;
-  <a href="skills/data-to-decision-brief/README.md"><img src="assets/skill-cards/data-to-decision-brief-v1.svg" alt="Data to Decision Brief: A workflow for checking and analyzing structured data, tracing findings to evidence, and turning the results into a concise decision brief with caveats and optional presentation-ready visuals." width="48%"></a>
+  <a href="skills/agent-workflow-cost-diagnostician/README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/skill-cards/agent-workflow-cost-diagnostician-v1.svg"><source media="(prefers-color-scheme: light)" srcset="assets/skill-cards/agent-workflow-cost-diagnostician-light-v1.svg"><img src="assets/skill-cards/agent-workflow-cost-diagnostician-light-v1.svg" alt="Agent Workflow Cost Diagnostician: A workflow for mapping an Agent task end to end, identifying measured and suspected cost or reliability bottlenecks, and designing quality-aware optimization experiments." width="48%"></picture></a>&nbsp;&nbsp;
+  <a href="skills/data-to-decision-brief/README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/skill-cards/data-to-decision-brief-v1.svg"><source media="(prefers-color-scheme: light)" srcset="assets/skill-cards/data-to-decision-brief-light-v1.svg"><img src="assets/skill-cards/data-to-decision-brief-light-v1.svg" alt="Data to Decision Brief: A workflow for checking and analyzing structured data, tracing findings to evidence, and turning the results into a concise decision brief with caveats and optional presentation-ready visuals." width="48%"></picture></a>
 </p>
 
 <p>
-  <a href="skills/creative-image-production/README.md"><img src="assets/skill-cards/creative-image-production-v1.svg" alt="Creative Image Production: A provider-aware workflow for turning an image brief into generated or edited assets, with reference-role tracking, visual QA, focused iteration, and reproducible delivery notes." width="48%"></a>&nbsp;&nbsp;
-  <a href="skills/model-evaluation/README.md"><img src="assets/skill-cards/model-evaluation-v1.svg" alt="模型测评: An independent workflow for evaluating a newly released or user-provided model and describing its strengths, weaknesses, and suitable use cases from task-based evidence." width="48%"></a>
+  <a href="skills/creative-image-production/README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/skill-cards/creative-image-production-v1.svg"><source media="(prefers-color-scheme: light)" srcset="assets/skill-cards/creative-image-production-light-v1.svg"><img src="assets/skill-cards/creative-image-production-light-v1.svg" alt="Creative Image Production: A provider-aware workflow for turning an image brief into generated or edited assets, with reference-role tracking, visual QA, focused iteration, and reproducible delivery notes." width="48%"></picture></a>&nbsp;&nbsp;
+  <a href="skills/model-evaluation/README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/skill-cards/model-evaluation-v1.svg"><source media="(prefers-color-scheme: light)" srcset="assets/skill-cards/model-evaluation-light-v1.svg"><img src="assets/skill-cards/model-evaluation-light-v1.svg" alt="模型测评: An independent workflow for evaluating a newly released or user-provided model and describing its strengths, weaknesses, and suitable use cases from task-based evidence." width="48%"></picture></a>
 </p>
 
 <p>
-  <a href="skills/model-selector/README.md"><img src="assets/skill-cards/model-selector-v1.svg" alt="模型选型: A provider-aware workflow for recommending three suitable models for a task, comparing current pricing and tradeoffs, and marking the most recommended option. Use it to choose among models; use 模型测评 to evaluate a specific model." width="48%"></a>
+  <a href="skills/model-selector/README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/skill-cards/model-selector-v1.svg"><source media="(prefers-color-scheme: light)" srcset="assets/skill-cards/model-selector-light-v1.svg"><img src="assets/skill-cards/model-selector-light-v1.svg" alt="模型选型: A provider-aware workflow for recommending three suitable models for a task, comparing current pricing and tradeoffs, and marking the most recommended option. Use it to choose among models; use 模型测评 to evaluate a specific model." width="48%"></picture></a>
 </p>
 
 ---
@@ -64,85 +64,85 @@ Products and tools built through an AI product lens.
 
 I write about AI products through an engineering and product lens.
 
----
+<p>
+  <a href="https://mp.weixin.qq.com/s/0JuTnlmf1bpT2sETI3f_XQ">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/article-cards/article-01-v1.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/article-cards/article-01-light-v1.svg">
+      <img src="assets/article-cards/article-01-light-v1.svg" alt="一个 Agent 能不能用，不看它有多聪明，要看它犯错后谁倒霉 · Agent · AI Product：从产品责任的角度看 Agent：真正决定它能不能进入业务现场的，不只是能力上限，而是出错后的责任边界、兜底机制和用户损失。" width="100%">
+    </picture>
+  </a>
+</p>
 
-### 一个 Agent 能不能用，不看它有多聪明，要看它犯错后谁倒霉
+<p>
+  <a href="https://mp.weixin.qq.com/s/wNzVAq1kCvWNYwG3C6dSLA">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/article-cards/article-02-v1.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/article-cards/article-02-light-v1.svg">
+      <img src="assets/article-cards/article-02-light-v1.svg" alt="一部短剧没有演员，评论区却多了一群失恋的人 · AI Content · User Emotion：一部没有真人演员的短剧，依然让用户投入情绪。这里值得看的不是生成技术本身，而是 AI 内容如何触发真实的观看、投射和讨论。" width="100%">
+    </picture>
+  </a>
+</p>
 
-<sub>Agent · AI Product</sub>
+<p>
+  <a href="https://mp.weixin.qq.com/s/n7dILeLOh610bJsTMeYtWQ">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/article-cards/article-03-v1.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/article-cards/article-03-light-v1.svg">
+      <img src="assets/article-cards/article-03-light-v1.svg" alt="24小时订单260万美元，具身智能最先卖爆的产品，长成了一只鸭子 · Embodied AI · Consumer Product：具身智能最早跑出来的爆款，可能不是最硬核的机器人，而是能被用户理解、喜欢并愿意付费的消费品。" width="100%">
+    </picture>
+  </a>
+</p>
 
-从产品责任的角度看 Agent：真正决定它能不能进入业务现场的，不只是能力上限，而是出错后的责任边界、兜底机制和用户损失。
+<p>
+  <a href="https://mp.weixin.qq.com/s/ANJtmf88fnIrBhuBT-K82w">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/article-cards/article-04-v1.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/article-cards/article-04-light-v1.svg">
+      <img src="assets/article-cards/article-04-light-v1.svg" alt="基础单价没降，Agent任务成本为什么最多能降约45% · Agent Cost · Workflow Design：模型基础单价不变，任务成本仍然可能下降。关键不只在价格，而在任务拆解、上下文管理和执行链路的重新设计。" width="100%">
+    </picture>
+  </a>
+</p>
 
-[继续读 →](https://mp.weixin.qq.com/s/0JuTnlmf1bpT2sETI3f_XQ)
+<p>
+  <a href="https://mp.weixin.qq.com/s/MUb2FaiS8fHlhU99ytRrEg">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/article-cards/article-05-v1.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/article-cards/article-05-light-v1.svg">
+      <img src="assets/article-cards/article-05-light-v1.svg" alt="Grok Bot最反常的设计，一队AI员工共用一台电脑 · Computer Use · Multi-Agent：一队 AI 员工共用一台电脑，看起来反常，却把协作、权限、界面和执行环境这些 Agent 产品问题放到了同一个桌面上。" width="100%">
+    </picture>
+  </a>
+</p>
 
----
+<p>
+  <a href="https://mp.weixin.qq.com/s/hfm_cyNzX1CWl0q0yaS3dw">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/article-cards/article-06-v1.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/article-cards/article-06-light-v1.svg">
+      <img src="assets/article-cards/article-06-light-v1.svg" alt="榜单第一离可用Agent还有多远，拆开MiniCPM5-2B的成绩单 · Evaluation · Agent Usability：榜单成绩回答的是模型在测试里表现如何，产品还要追问：它离真实可用、稳定交付和可控失败到底还有多远。" width="100%">
+    </picture>
+  </a>
+</p>
 
-### 一部短剧没有演员，评论区却多了一群失恋的人
+<p>
+  <a href="https://mp.weixin.qq.com/s/HCUtDnsF9qYlFZ84eY2gvQ">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/article-cards/article-07-v1.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/article-cards/article-07-light-v1.svg">
+      <img src="assets/article-cards/article-07-light-v1.svg" alt="多数Agent测试超过V4 Pro，DeepSeek V4.1 Flash赢在模型还是脚手架 · Benchmark · Product System：当 Agent 测试结果超过预期，问题就不只是模型强不强，也要拆开看脚手架、工具链和评测方式贡献了多少。" width="100%">
+    </picture>
+  </a>
+</p>
 
-<sub>AI Content · User Emotion</sub>
-
-一部没有真人演员的短剧，依然让用户投入情绪。这里值得看的不是生成技术本身，而是 AI 内容如何触发真实的观看、投射和讨论。
-
-[继续读 →](https://mp.weixin.qq.com/s/wNzVAq1kCvWNYwG3C6dSLA)
-
----
-
-### 24小时订单260万美元，具身智能最先卖爆的产品，长成了一只鸭子
-
-<sub>Embodied AI · Consumer Product</sub>
-
-具身智能最早跑出来的爆款，可能不是最硬核的机器人，而是能被用户理解、喜欢并愿意付费的消费品。
-
-[继续读 →](https://mp.weixin.qq.com/s/n7dILeLOh610bJsTMeYtWQ)
-
----
-
-### 基础单价没降，Agent任务成本为什么最多能降约45%
-
-<sub>Agent Cost · Workflow Design</sub>
-
-模型基础单价不变，任务成本仍然可能下降。关键不只在价格，而在任务拆解、上下文管理和执行链路的重新设计。
-
-[继续读 →](https://mp.weixin.qq.com/s/ANJtmf88fnIrBhuBT-K82w)
-
----
-
-### Grok Bot最反常的设计，一队AI员工共用一台电脑
-
-<sub>Computer Use · Multi-Agent</sub>
-
-一队 AI 员工共用一台电脑，看起来反常，却把协作、权限、界面和执行环境这些 Agent 产品问题放到了同一个桌面上。
-
-[继续读 →](https://mp.weixin.qq.com/s/MUb2FaiS8fHlhU99ytRrEg)
-
----
-
-### 榜单第一离可用Agent还有多远，拆开MiniCPM5-2B的成绩单
-
-<sub>Evaluation · Agent Usability</sub>
-
-榜单成绩回答的是模型在测试里表现如何，产品还要追问：它离真实可用、稳定交付和可控失败到底还有多远。
-
-[继续读 →](https://mp.weixin.qq.com/s/hfm_cyNzX1CWl0q0yaS3dw)
-
----
-
-### 多数Agent测试超过V4 Pro，DeepSeek V4.1 Flash赢在模型还是脚手架
-
-<sub>Benchmark · Product System</sub>
-
-当 Agent 测试结果超过预期，问题就不只是模型强不强，也要拆开看脚手架、工具链和评测方式贡献了多少。
-
-[继续读 →](https://mp.weixin.qq.com/s/HCUtDnsF9qYlFZ84eY2gvQ)
-
----
-
-### AI提高效率以后，轻松为什么没有分到你手里
-
-<sub>Productivity · Work Design</sub>
-
-AI 提高效率之后，轻松不一定自动回到个人手里。真正的问题是效率收益如何被组织、流程和角色重新分配。
-
-[继续读 →](https://mp.weixin.qq.com/s/oc6y7H90HRNO9cjHAzPcIw)
+<p>
+  <a href="https://mp.weixin.qq.com/s/oc6y7H90HRNO9cjHAzPcIw">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="assets/article-cards/article-08-v1.svg">
+      <source media="(prefers-color-scheme: light)" srcset="assets/article-cards/article-08-light-v1.svg">
+      <img src="assets/article-cards/article-08-light-v1.svg" alt="AI提高效率以后，轻松为什么没有分到你手里 · Productivity · Work Design：AI 提高效率之后，轻松不一定自动回到个人手里。真正的问题是效率收益如何被组织、流程和角色重新分配。" width="100%">
+    </picture>
+  </a>
+</p>
 
 ---
 
