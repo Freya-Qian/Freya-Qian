@@ -32,40 +32,52 @@ Products and tools built through an AI product lens.
 本地工具与独立探索，每个项目保留自己的内容和入口。
 
 <p>
-  <a href="projects/Lingyu/README.md"><img src="assets/project-cards/lingyu-simple-v2.svg" alt="灵屿 Lingyu：刘海屏桌面工作台项目卡片" width="48%"></a>
+  <a href="projects/Lingyu/README.md"><img src="assets/project-cards/lingyu-simple-v3.svg" alt="灵屿 Lingyu：刘海屏桌面工作台项目卡片" width="48%"></a>
 </p>
 
 ---
 
 ## 🧰 AI Skills
 
-### [AI PM Skill Evaluator](skills/ai-pm-skill-evaluator/README.md)
-
-A workflow for evaluating and improving AI product management Skills. It checks package structure, activation, process adherence, evidence, safety signals, deliverable quality, regression behavior, and measured efficiency.
-
-### [AI Product Opportunity Evaluator](skills/ai-product-opportunity-evaluator/README.md)
-
-A workflow for moving from product discovery evidence and alternatives to an opportunity decision, validation plan, and optional product brief.
-
-### [Agent Workflow Cost Diagnostician](skills/agent-workflow-cost-diagnostician/README.md)
-
-A workflow for mapping an Agent task end to end, identifying measured and suspected cost or reliability bottlenecks, and designing quality-aware optimization experiments.
-
-### [Data to Decision Brief](skills/data-to-decision-brief/README.md)
-
-A workflow for checking and analyzing structured data, tracing findings to evidence, and turning the results into a concise decision brief with caveats and optional presentation-ready visuals.
-
-### [Creative Image Production](skills/creative-image-production/README.md)
-
-A provider-aware workflow for turning an image brief into generated or edited assets, with reference-role tracking, visual QA, focused iteration, and reproducible delivery notes.
-
-### [模型测评](skills/model-evaluation/README.md)
-
-An independent workflow for evaluating a newly released or user-provided model and describing its strengths, weaknesses, and suitable use cases from task-based evidence.
-
-### [模型选型](skills/model-selector/README.md)
-
-A provider-aware workflow for recommending three suitable models for a task, comparing current pricing and tradeoffs, and marking the most recommended option. Use it to choose among models; use 模型测评 to evaluate a specific model.
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="skills/ai-pm-skill-evaluator/README.md">AI PM Skill Evaluator</a></h3>
+      <p>A workflow for evaluating and improving AI product management Skills. It checks package structure, activation, process adherence, evidence, safety signals, deliverable quality, regression behavior, and measured efficiency.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="skills/ai-product-opportunity-evaluator/README.md">AI Product Opportunity Evaluator</a></h3>
+      <p>A workflow for moving from product discovery evidence and alternatives to an opportunity decision, validation plan, and optional product brief.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="skills/agent-workflow-cost-diagnostician/README.md">Agent Workflow Cost Diagnostician</a></h3>
+      <p>A workflow for mapping an Agent task end to end, identifying measured and suspected cost or reliability bottlenecks, and designing quality-aware optimization experiments.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="skills/data-to-decision-brief/README.md">Data to Decision Brief</a></h3>
+      <p>A workflow for checking and analyzing structured data, tracing findings to evidence, and turning the results into a concise decision brief with caveats and optional presentation-ready visuals.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="skills/creative-image-production/README.md">Creative Image Production</a></h3>
+      <p>A provider-aware workflow for turning an image brief into generated or edited assets, with reference-role tracking, visual QA, focused iteration, and reproducible delivery notes.</p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="skills/model-evaluation/README.md">模型测评</a></h3>
+      <p>An independent workflow for evaluating a newly released or user-provided model and describing its strengths, weaknesses, and suitable use cases from task-based evidence.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="skills/model-selector/README.md">模型选型</a></h3>
+      <p>A provider-aware workflow for recommending three suitable models for a task, comparing current pricing and tradeoffs, and marking the most recommended option. Use it to choose among models; use 模型测评 to evaluate a specific model.</p>
+    </td>
+    <td width="50%" valign="top"></td>
+  </tr>
+</table>
 
 ---
 
