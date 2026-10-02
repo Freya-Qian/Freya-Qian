@@ -53,6 +53,10 @@ A provider-aware workflow for turning an image brief into generated or edited as
 
 An independent workflow for evaluating a newly released or user-provided model and describing its strengths, weaknesses, and suitable use cases from task-based evidence.
 
+### [模型选型](skills/model-selector/README.md)
+
+A provider-aware workflow for recommending three suitable models for a task, comparing current pricing and tradeoffs, and marking the most recommended option. Use it to choose among models; use 模型测评 to evaluate a specific model.
+
 ---
 
 ## 🗂️ 项目

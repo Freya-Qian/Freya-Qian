@@ -1,0 +1,4 @@
+interface:
+  display_name: "模型选型"
+  short_description: "按任务推荐三款模型，并比较当前能力、价格与适用取舍"
+  default_prompt: "使用 $model-selector 为这个任务推荐模型，比较综合表现和成本："
