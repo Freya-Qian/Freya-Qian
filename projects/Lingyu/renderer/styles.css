@@ -31,6 +31,8 @@
   --p2: var(--accent-green);
   --p3: var(--accent-blue);
 
+  --home-coordinated-surface: radial-gradient(ellipse at 0% 0%, rgba(10,92,112,.23), transparent 66%), radial-gradient(ellipse at 100% 0%, rgba(115,52,156,.16), transparent 55%), linear-gradient(135deg,#081218,#070c11 62%,#111020);
+
   --home-clock-surface: var(--surface-1);
   --home-note-surface: var(--surface-1);
   --home-mirror-surface: var(--surface-1);
@@ -5520,7 +5522,7 @@ body {
   --music-cyan: #42d9f4;
   --music-violet: #ba75f5;
   border: 1px solid rgba(96,193,231,.4);
-  background-image: radial-gradient(ellipse at 0% 0%, rgba(10,92,112,.23), transparent 66%), radial-gradient(ellipse at 100% 0%, rgba(115,52,156,.16), transparent 55%), linear-gradient(135deg,#081218,#070c11 62%,#111020);
+  background-image: var(--home-coordinated-surface);
   box-shadow: inset 0 0 14px rgba(69,209,239,.08), 0 0 16px rgba(40,132,178,.08);
   text-align: left;
 }
@@ -5635,3 +5637,112 @@ body {
 .home-music[data-widget-size='small'] .music-controls button { width:27px; height:27px; }
 .home-music[data-widget-size='mini'] .music-controls .music-play,
 .home-music[data-widget-size='small'] .music-controls .music-play { width:32px; height:32px; }
+
+/* 灵屿首页辅助卡片：沿用 QQ 音乐深蓝黑底色，取消灰色高光边线。 */
+.home-bento > :is(.home-windows, .home-commands, .home-note, .home-recorder, .home-mirror) {
+  --home-note-surface: var(--home-coordinated-surface);
+  --text-2: #aab8c8;
+  --text-3: #7d8b9e;
+  --text-4: #69788a;
+  background: var(--home-coordinated-surface);
+  border: 0;
+  box-shadow: none;
+}
+.home-bento > :is(.home-windows, .home-commands, .home-note, .home-recorder, .home-mirror):is(:hover, :focus-within) {
+  box-shadow: none;
+}
+.home-bento > :is(.home-windows, .home-commands, .home-note, .home-recorder, .home-mirror)::after {
+  background: none;
+}
+.home-bento > :is(.home-windows, .home-commands, .home-note, .home-recorder, .home-mirror) .tile-label {
+  color: #e9eef7;
+}
+
+/* 照片隐藏或移除后，卡片与镜子按钮均露出同一套底色。 */
+.home-bento > .home-mirror .mirror-stage {
+  background: var(--home-coordinated-surface);
+}
+/* 三层底色裁切在内侧，第四层保留计时器原有进度描边。 */
+.home-bento > .home-pomodoro[data-widget-size] {
+  background-image: var(--home-coordinated-surface), conic-gradient(
+    from -90deg,
+    var(--pomodoro-border-cyan) 0turn,
+    var(--pomodoro-border-violet) calc(var(--pomodoro-progress) * 1turn),
+    var(--pomodoro-border-track) 0turn,
+    var(--pomodoro-border-track) 1turn
+  );
+  background-origin: padding-box, padding-box, padding-box, border-box;
+  background-clip: padding-box, padding-box, padding-box, border-box;
+}
+
+/* 所有 Tab 共用首页色板，保留分类与录音等状态色。 */
+.tab-panel:not(#tab-home) {
+  --surface-1: #0b141e;
+  --surface-2: #142232;
+  --surface-3: #1d3043;
+  --text-1: #e9eef7;
+  --text-2: #aab8c8;
+  --text-3: #7d8b9e;
+  --text-4: #69788a;
+  --hairline: rgba(125,185,218,.12);
+  --hairline-soft: rgba(125,185,218,.08);
+  --item-hover: rgba(76,179,215,.08);
+}
+.tab-panel:not(#tab-home) :is(.tile, .link-group, .recording-library, .recording-detail, .notes-library, .notes-detail) {
+  background: var(--home-coordinated-surface);
+  border: 0;
+  box-shadow: none;
+}
+.tab-panel:not(#tab-home) :is(.tile, .link-group, .recording-library, .recording-detail, .notes-library, .notes-detail):hover {
+  background: radial-gradient(360px circle at var(--tile-x, 50%) var(--tile-y, 0%), rgba(80,196,229,.075), transparent 65%), var(--home-coordinated-surface);
+  box-shadow: none;
+}
+.tab-panel:not(#tab-home) .tile::after { background: none; }
+.tab-panel:not(#tab-home) .notes-detail:focus-within { box-shadow: none; }
+.tab-panel:not(#tab-home) .notes-list-item.active {
+  background: linear-gradient(110deg, rgba(57,173,205,.18), rgba(145,106,211,.12));
+  box-shadow: none;
+}
+/* 恢复首页鼠标附近高亮，使用青蓝光晕而非灰色描边。 */
+.home-bento > :is(.home-windows, .home-commands, .home-note, .home-recorder, .home-mirror)::after {
+  background: radial-gradient(360px circle at var(--tile-x, 50%) var(--tile-y, 0%), rgba(80,196,229,.10), transparent 65%);
+}
+.home-bento > :is(.home-windows, .home-commands, .home-note, .home-recorder, .home-mirror):hover::after {
+  opacity: 1;
+}
+.tabs.is-split .tab { background: rgba(39,75,102,.16); color: #7d8b9e; }
+.tabs .tab:hover { background: rgba(65,153,189,.17); color: #d4e8f4; }
+.tabs .tab.active { color: #edf7ff; }
+.tab-indicator {
+  background: linear-gradient(120deg, rgba(41,145,174,.28), rgba(116,84,170,.23));
+  border: 0;
+  box-shadow: none;
+}
+/* 输入区和设置项也使用冷色底，避免卡片内残留暖灰块。 */
+.tab-panel:not(#tab-home) :is(.link-add-wrap input, .group-link-add, .add-row input, .credentials-form-card input, .credentials-library-actions input, .credential-item.editing input, .settings-default-tab-row select) {
+  background: var(--surface-2);
+  box-shadow: none;
+}
+.tab-panel:not(#tab-home) :is(.workspace-button, .settings-device-row button, .todo-deadline-trigger) {
+  background: linear-gradient(120deg, rgba(50,121,150,.19), rgba(111,83,157,.14));
+  border-color: transparent;
+  box-shadow: none;
+  color: var(--text-2);
+}
+.tab-panel:not(#tab-home) .workspace-button.primary {
+  background: #75cce2;
+  color: #091721;
+}
+.tab-panel:not(#tab-home) :is(.settings-status-list > div, .settings-feature-grid label, .settings-home-module-grid label, .notes-list-item) {
+  background: rgba(68,130,159,.07);
+}
+.tab-panel:not(#tab-home) :is(.settings-feature-grid label, .settings-home-module-grid label, .notes-list-item):hover {
+  background: rgba(73,167,199,.14);
+}
+.tab-panel:not(#tab-home) .notes-list-item.active {
+  background: linear-gradient(110deg, rgba(57,173,205,.18), rgba(145,106,211,.12));
+}
+.tab-panel:not(#tab-home) :is(.workspace-button, .settings-device-row button, .todo-deadline-trigger):hover {
+  background: linear-gradient(120deg, rgba(65,161,193,.3), rgba(126,94,179,.23));
+  color: var(--text-1);
+}

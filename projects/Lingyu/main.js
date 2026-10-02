@@ -2914,8 +2914,8 @@ async function resolveQQMusicLyrics(track, trackKey, requestId, retryAttempt = 0
 function requestQQMusicArtwork(trackKey, attempt = 0) {
   if (!trackKey || trackKey !== nowPlayingTrackKey || nowPlayingArtwork) return;
   const retry = () => {
-    if (attempt >= 3 || trackKey !== nowPlayingTrackKey || nowPlayingArtwork || isQuitting) return;
-    setTimeout(() => requestQQMusicArtwork(trackKey, attempt + 1), 500 * (2 ** attempt)).unref?.();
+    if (attempt >= 6 || trackKey !== nowPlayingTrackKey || nowPlayingArtwork || isQuitting) return;
+    setTimeout(() => requestQQMusicArtwork(trackKey, attempt + 1), Math.min(4000, 500 * (2 ** attempt))).unref?.();
   };
   // Album artwork can arrive after the first song metadata event.
   execFile(MEDIA_CONTROL_EXECUTABLE, ['get'], { timeout: 2500, maxBuffer: 2 * 1024 * 1024 }, (error, stdout) => {
@@ -2955,25 +2955,38 @@ function updateQQMusicNowPlaying(payload, isFullSnapshot) {
   const trackKey = track && track.title
     ? `${track.title}\u0000${track.artist || ''}\u0000${track.album || ''}`
     : '';
-  if (trackKey !== nowPlayingTrackKey) {
+  const trackChanged = trackKey !== nowPlayingTrackKey;
+  if (trackChanged) {
     nowPlayingTrackKey = trackKey;
     nowPlayingArtwork = '';
     nowPlayingLyricsRequest += 1;
     nowPlayingLyrics = [];
     nowPlayingLyricsState = trackKey ? 'loading' : 'waiting';
     if (trackKey) {
-      requestQQMusicArtwork(trackKey);
       void resolveQQMusicLyrics(track, trackKey, nowPlayingLyricsRequest);
     }
     else publishQQMusicStatus(true);
   }
+  // MediaRemote can deliver the cover after the title. Accept the artwork
+  // carried by this event, never artwork inherited from the previous track.
+  const artworkMimeType = String(payload.artworkMimeType || '');
+  const artworkData = String(payload.artworkData || '');
+  if (trackKey && /^image\/(?:jpeg|png|webp)$/i.test(artworkMimeType)
+    && artworkData && artworkData.length <= 1536 * 1024) {
+    nowPlayingArtwork = `data:${artworkMimeType};base64,${artworkData}`;
+  }
+  if (track) {
+    delete track.artworkData;
+    delete track.artworkMimeType;
+  }
+  if (trackKey && !nowPlayingArtwork && (isFullSnapshot || trackChanged)) requestQQMusicArtwork(trackKey);
   qqMusicPlaying = Boolean(track && track.playing);
   publishQQMusicStatus();
 }
 
 function consumeMediaControlOutput(chunk) {
   mediaControlOutput += String(chunk || '');
-  if (mediaControlOutput.length > 1024 * 1024) mediaControlOutput = mediaControlOutput.slice(-256 * 1024);
+  if (mediaControlOutput.length > 4 * 1024 * 1024) mediaControlOutput = mediaControlOutput.slice(-2 * 1024 * 1024);
   let newline = mediaControlOutput.indexOf('\n');
   while (newline >= 0) {
     const line = mediaControlOutput.slice(0, newline).trim();
@@ -3000,7 +3013,7 @@ function startQQMusicNowPlayingMonitor() {
     musicPlaybackTimer.unref?.();
   }
   try {
-    const monitor = spawn(MEDIA_CONTROL_EXECUTABLE, ['stream', '--no-artwork', '--debounce=250'], {
+    const monitor = spawn(MEDIA_CONTROL_EXECUTABLE, ['stream', '--debounce=250'], {
       stdio: ['ignore', 'pipe', 'ignore'],
     });
     mediaControlProcess = monitor;
