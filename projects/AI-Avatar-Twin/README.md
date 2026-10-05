@@ -17,11 +17,12 @@
 ## 一、首次准备
 1. 在项目根目录执行 `cp .env.example .env`，再在本地 `.env` 填入自己的模型凭据。`.env` 不随源码交付，不能提交到 GitHub。
 2. 本地演示使用 `DEV_MODE=true`；正式部署前必须接入真实短信登录。模型、风格化、语音及视频生成可能产生费用，调用前核实账号权限和服务价格。
-3. 建 Python 环境 + 装依赖：
+3. 建 Python 环境 + 装依赖（使用已验证的 **Python 3.13**；当前固定的 Pillow 10.4.0 和 pydantic-core 2.27.2 没有 Python 3.14 预编译 wheel，使用 3.14 会尝试源码构建，其兼容性尚未验证）：
    ```bash
    cd backend
-   python3 -m venv .venv
+   python3.13 -m venv .venv
    .venv/bin/pip install -r requirements.txt
+   .venv/bin/pip check
    ```
 
 ## 二、启动后端
