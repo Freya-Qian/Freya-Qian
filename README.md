@@ -32,7 +32,8 @@ Products and tools built through an AI product lens.
 本地工具与独立探索，每个项目保留自己的内容和入口。
 
 <p>
-  <a href="projects/Lingyu/README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-cards/lingyu-simple-v3.svg"><source media="(prefers-color-scheme: light)" srcset="assets/project-cards/lingyu-simple-light-v3.svg"><img src="assets/project-cards/lingyu-simple-light-v3.svg" alt="灵屿 Lingyu：刘海屏桌面工作台项目卡片" width="48%"></picture></a>
+  <a href="projects/Lingyu/README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-cards/lingyu-simple-v3.svg"><source media="(prefers-color-scheme: light)" srcset="assets/project-cards/lingyu-simple-light-v3.svg"><img src="assets/project-cards/lingyu-simple-light-v3.svg" alt="灵屿 Lingyu：刘海屏桌面工作台项目卡片" width="48%"></picture></a>&nbsp;&nbsp;
+  <a href="projects/AI-Avatar-Twin/README.md"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/project-cards/ai-avatar-twin-simple-v1.svg"><source media="(prefers-color-scheme: light)" srcset="assets/project-cards/ai-avatar-twin-simple-light-v1.svg"><img src="assets/project-cards/ai-avatar-twin-simple-light-v1.svg" alt="AI Avatar Twin：从选题与脚本到数字人口播和素材包导出的工作台，含前后端源码与验证记录" width="48%"></picture></a>
 </p>
 
 ---
