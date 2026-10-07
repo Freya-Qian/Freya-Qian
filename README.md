@@ -2,8 +2,8 @@
 
 <a href="https://github.com/Freya-Qian">
   <picture>
-    <source media="(max-width: 600px)" srcset="assets/profile-ai-character-mobile-v2.svg">
-    <img src="assets/profile-ai-character-v2.svg" alt="Freya Qian · AI Product Manager · AI Builder · Writer：AI 角色、环绕信号与能力标签动态反馈" width="100%">
+    <source media="(max-width: 600px)" srcset="assets/profile-ai-character-mobile-v3.svg">
+    <img src="assets/profile-ai-character-v3.svg" alt="Freya Qian · AI Product Manager · AI Builder · Writer：AI 角色、环绕信号与能力标签动态反馈" width="100%">
   </picture>
 </a>
 
@@ -26,8 +26,8 @@ It is the lens for understanding systems, evaluating opportunities, and making b
 Products and tools built through an AI product lens.
 
 <p align="center">
-  <a href="https://github.com/MN0709/MotoViz"><img src="assets/project-cards/motoviz-level-v11.svg" alt="MotoViz project card" width="48%"></a>&nbsp;&nbsp;
-  <a href="https://github.com/Freya-Qian/ProdForge-AI"><img src="assets/project-cards/prodforge-level-v15.svg" alt="ProdForge AI project card" width="48%"></a>
+  <a href="https://github.com/MN0709/MotoViz"><img src="assets/project-cards/motoviz-simple-v1.svg" alt="MotoViz project card" width="48%"></a>&nbsp;&nbsp;
+  <a href="https://github.com/Freya-Qian/ProdForge-AI"><img src="assets/project-cards/prodforge-simple-v1.svg" alt="ProdForge AI project card" width="48%"></a>
 </p>
 
 <br>
