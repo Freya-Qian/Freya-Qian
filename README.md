@@ -40,7 +40,7 @@ Products and tools built through an AI product lens.
 </p>
 
 <p>
-  <a href="https://github.com/MN0709/MotoViz"><img src="assets/project-cards/motoviz-icon-v2.svg" alt="MotoViz：带摩托车图标的项目卡片，探索 AI 摩托车创意" width="48%"></a>
+  <a href="https://github.com/MN0709/MotoViz"><img src="assets/project-cards/motoviz-motorcycle-v3.svg" alt="MotoViz：带摩托车图标的项目卡片，探索 AI 摩托车创意" width="48%"></a>
 </p>
 
 ---
