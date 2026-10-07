@@ -1,11 +1,6 @@
 # Hi, I'm Freya Qian
 
-<a href="https://github.com/Freya-Qian">
-  <picture>
-    <source media="(max-width: 600px)" srcset="assets/profile-ai-character-mobile-v1.svg">
-    <img src="assets/profile-ai-character-v1.svg" alt="Freya Qian · AI Product Manager · AI Builder · Writer：AI 角色、环绕信号与能力标签动态反馈" width="100%">
-  </picture>
-</a>
+[![Launch Freya AI Lab](https://raw.githubusercontent.com/Freya-Qian/Freya-Qian/main/assets/profile-launch.svg)](https://github.com/Freya-Qian)
 
 Focused on turning large model capabilities into sustainable user value.
 
