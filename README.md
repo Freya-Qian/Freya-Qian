@@ -37,8 +37,8 @@ Products and tools built through an AI product lens.
 本地工具与独立探索，每个项目保留自己的内容和入口。
 
 <p>
-  <a href="https://github.com/Freya-Qian/Lingyu"><img src="assets/project-cards/lingyu-clean-v1.svg" alt="灵屿 Lingyu：刘海屏桌面工作台项目卡片" width="48%"></a>&nbsp;&nbsp;
-  <a href="https://github.com/Freya-Qian/AI-Avatar-Twin"><img src="assets/project-cards/ai-avatar-twin-clean-v1.svg" alt="AI Avatar Twin：从选题与脚本到数字人口播和素材包导出的工作台，含前后端源码与验证记录" width="48%"></a>
+  <a href="https://github.com/Freya-Qian/Lingyu"><picture><source media="(max-width: 600px)" srcset="assets/project-cards/lingyu-clean-mobile-v1.svg"><img src="assets/project-cards/lingyu-clean-v1.svg" alt="灵屿 Lingyu：刘海屏桌面工作台项目卡片" width="48%"></picture></a>&nbsp;&nbsp;
+  <a href="https://github.com/Freya-Qian/AI-Avatar-Twin"><picture><source media="(max-width: 600px)" srcset="assets/project-cards/ai-avatar-twin-clean-mobile-v1.svg"><img src="assets/project-cards/ai-avatar-twin-clean-v1.svg" alt="AI Avatar Twin：从选题与脚本到数字人口播和素材包导出的工作台，含前后端源码与验证记录" width="48%"></picture></a>
 </p>
 
 ---
@@ -46,22 +46,22 @@ Products and tools built through an AI product lens.
 ## 🧰 AI Skills
 
 <p>
-  <a href="https://github.com/Freya-Qian/ai-pm-skill-evaluator"><img src="assets/skill-cards/ai-pm-skill-evaluator-clean-v1.svg" alt="AI PM Skill Evaluator: A workflow for evaluating and improving AI product management Skills. It checks package structure, activation, process adherence, evidence, safety signals, deliverable quality, regression behavior, and measured efficiency." width="48%"></a>&nbsp;&nbsp;
-  <a href="https://github.com/Freya-Qian/ai-product-opportunity-evaluator"><img src="assets/skill-cards/ai-product-opportunity-evaluator-clean-v1.svg" alt="AI Product Opportunity Evaluator: A workflow for moving from product discovery evidence and alternatives to an opportunity decision, validation plan, and optional product brief." width="48%"></a>
+  <a href="https://github.com/Freya-Qian/ai-pm-skill-evaluator"><picture><source media="(max-width: 600px)" srcset="assets/skill-cards/ai-pm-skill-evaluator-clean-mobile-v1.svg"><img src="assets/skill-cards/ai-pm-skill-evaluator-clean-v1.svg" alt="AI PM Skill Evaluator: A workflow for evaluating and improving AI product management Skills. It checks package structure, activation, process adherence, evidence, safety signals, deliverable quality, regression behavior, and measured efficiency." width="48%"></picture></a>&nbsp;&nbsp;
+  <a href="https://github.com/Freya-Qian/ai-product-opportunity-evaluator"><picture><source media="(max-width: 600px)" srcset="assets/skill-cards/ai-product-opportunity-evaluator-clean-mobile-v1.svg"><img src="assets/skill-cards/ai-product-opportunity-evaluator-clean-v1.svg" alt="AI Product Opportunity Evaluator: A workflow for moving from product discovery evidence and alternatives to an opportunity decision, validation plan, and optional product brief." width="48%"></picture></a>
 </p>
 
 <p>
-  <a href="https://github.com/Freya-Qian/agent-workflow-cost-diagnostician"><img src="assets/skill-cards/agent-workflow-cost-diagnostician-clean-v1.svg" alt="Agent Workflow Cost Diagnostician: A workflow for mapping an Agent task end to end, identifying measured and suspected cost or reliability bottlenecks, and designing quality-aware optimization experiments." width="48%"></a>&nbsp;&nbsp;
-  <a href="https://github.com/Freya-Qian/data-to-decision-brief"><img src="assets/skill-cards/data-to-decision-brief-clean-v1.svg" alt="Data to Decision Brief: A workflow for checking and analyzing structured data, tracing findings to evidence, and turning the results into a concise decision brief with caveats and optional presentation-ready visuals." width="48%"></a>
+  <a href="https://github.com/Freya-Qian/agent-workflow-cost-diagnostician"><picture><source media="(max-width: 600px)" srcset="assets/skill-cards/agent-workflow-cost-diagnostician-clean-mobile-v1.svg"><img src="assets/skill-cards/agent-workflow-cost-diagnostician-clean-v1.svg" alt="Agent Workflow Cost Diagnostician: A workflow for mapping an Agent task end to end, identifying measured and suspected cost or reliability bottlenecks, and designing quality-aware optimization experiments." width="48%"></picture></a>&nbsp;&nbsp;
+  <a href="https://github.com/Freya-Qian/data-to-decision-brief"><picture><source media="(max-width: 600px)" srcset="assets/skill-cards/data-to-decision-brief-clean-mobile-v1.svg"><img src="assets/skill-cards/data-to-decision-brief-clean-v1.svg" alt="Data to Decision Brief: A workflow for checking and analyzing structured data, tracing findings to evidence, and turning the results into a concise decision brief with caveats and optional presentation-ready visuals." width="48%"></picture></a>
 </p>
 
 <p>
-  <a href="https://github.com/Freya-Qian/creative-image-production"><img src="assets/skill-cards/creative-image-production-clean-v1.svg" alt="Creative Image Production: A provider-aware workflow for turning an image brief into generated or edited assets, with reference-role tracking, visual QA, focused iteration, and reproducible delivery notes." width="48%"></a>&nbsp;&nbsp;
-  <a href="https://github.com/Freya-Qian/model-evaluation"><img src="assets/skill-cards/model-evaluation-clean-v1.svg" alt="模型测评: An independent workflow for evaluating a newly released or user-provided model and describing its strengths, weaknesses, and suitable use cases from task-based evidence." width="48%"></a>
+  <a href="https://github.com/Freya-Qian/creative-image-production"><picture><source media="(max-width: 600px)" srcset="assets/skill-cards/creative-image-production-clean-mobile-v1.svg"><img src="assets/skill-cards/creative-image-production-clean-v1.svg" alt="Creative Image Production: A provider-aware workflow for turning an image brief into generated or edited assets, with reference-role tracking, visual QA, focused iteration, and reproducible delivery notes." width="48%"></picture></a>&nbsp;&nbsp;
+  <a href="https://github.com/Freya-Qian/model-evaluation"><picture><source media="(max-width: 600px)" srcset="assets/skill-cards/model-evaluation-clean-mobile-v1.svg"><img src="assets/skill-cards/model-evaluation-clean-v1.svg" alt="模型测评: An independent workflow for evaluating a newly released or user-provided model and describing its strengths, weaknesses, and suitable use cases from task-based evidence." width="48%"></picture></a>
 </p>
 
 <p>
-  <a href="https://github.com/Freya-Qian/model-selector"><img src="assets/skill-cards/model-selector-clean-v1.svg" alt="模型选型: A provider-aware workflow for recommending three suitable models for a task, comparing current pricing and tradeoffs, and marking the most recommended option. Use it to choose among models; use 模型测评 to evaluate a specific model." width="48%"></a>
+  <a href="https://github.com/Freya-Qian/model-selector"><picture><source media="(max-width: 600px)" srcset="assets/skill-cards/model-selector-clean-mobile-v1.svg"><img src="assets/skill-cards/model-selector-clean-v1.svg" alt="模型选型: A provider-aware workflow for recommending three suitable models for a task, comparing current pricing and tradeoffs, and marking the most recommended option. Use it to choose among models; use 模型测评 to evaluate a specific model." width="48%"></picture></a>
 </p>
 
 ---
