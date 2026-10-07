@@ -73,8 +73,8 @@ I write about AI products through an engineering and product lens.
 <p>
   <a href="https://mp.weixin.qq.com/s/0JuTnlmf1bpT2sETI3f_XQ">
     <picture>
-      <source media="(max-width: 600px)" srcset="assets/article-cards/article-01-white-mobile-v3.svg">
-      <img src="assets/article-cards/article-01-white-v3.svg" alt="一个 Agent 能不能用，不看它有多聪明，要看它犯错后谁倒霉 · Agent · AI Product：从产品责任的角度看 Agent：真正决定它能不能进入业务现场的，不只是能力上限，而是出错后的责任边界、兜底机制和用户损失。" width="100%">
+      <source media="(max-width: 600px)" srcset="assets/article-cards/article-01-white-mobile-v4.svg">
+      <img src="assets/article-cards/article-01-white-v4.svg" alt="一个 Agent 能不能用，不看它有多聪明，要看它犯错后谁倒霉 · Agent · AI Product：从产品责任的角度看 Agent：真正决定它能不能进入业务现场的，不只是能力上限，而是出错后的责任边界、兜底机制和用户损失。" width="100%">
     </picture>
   </a>
 </p>
@@ -82,8 +82,8 @@ I write about AI products through an engineering and product lens.
 <p>
   <a href="https://mp.weixin.qq.com/s/wNzVAq1kCvWNYwG3C6dSLA">
     <picture>
-      <source media="(max-width: 600px)" srcset="assets/article-cards/article-02-white-mobile-v3.svg">
-      <img src="assets/article-cards/article-02-white-v3.svg" alt="一部短剧没有演员，评论区却多了一群失恋的人 · AI Content · User Emotion：一部没有真人演员的短剧，依然让用户投入情绪。这里值得看的不是生成技术本身，而是 AI 内容如何触发真实的观看、投射和讨论。" width="100%">
+      <source media="(max-width: 600px)" srcset="assets/article-cards/article-02-white-mobile-v4.svg">
+      <img src="assets/article-cards/article-02-white-v4.svg" alt="一部短剧没有演员，评论区却多了一群失恋的人 · AI Content · User Emotion：一部没有真人演员的短剧，依然让用户投入情绪。这里值得看的不是生成技术本身，而是 AI 内容如何触发真实的观看、投射和讨论。" width="100%">
     </picture>
   </a>
 </p>
@@ -91,8 +91,8 @@ I write about AI products through an engineering and product lens.
 <p>
   <a href="https://mp.weixin.qq.com/s/n7dILeLOh610bJsTMeYtWQ">
     <picture>
-      <source media="(max-width: 600px)" srcset="assets/article-cards/article-03-white-mobile-v3.svg">
-      <img src="assets/article-cards/article-03-white-v3.svg" alt="24小时订单260万美元，具身智能最先卖爆的产品，长成了一只鸭子 · Embodied AI · Consumer Product：具身智能最早跑出来的爆款，可能不是最硬核的机器人，而是能被用户理解、喜欢并愿意付费的消费品。" width="100%">
+      <source media="(max-width: 600px)" srcset="assets/article-cards/article-03-white-mobile-v4.svg">
+      <img src="assets/article-cards/article-03-white-v4.svg" alt="24小时订单260万美元，具身智能最先卖爆的产品，长成了一只鸭子 · Embodied AI · Consumer Product：具身智能最早跑出来的爆款，可能不是最硬核的机器人，而是能被用户理解、喜欢并愿意付费的消费品。" width="100%">
     </picture>
   </a>
 </p>
@@ -100,8 +100,8 @@ I write about AI products through an engineering and product lens.
 <p>
   <a href="https://mp.weixin.qq.com/s/ANJtmf88fnIrBhuBT-K82w">
     <picture>
-      <source media="(max-width: 600px)" srcset="assets/article-cards/article-04-white-mobile-v3.svg">
-      <img src="assets/article-cards/article-04-white-v3.svg" alt="基础单价没降，Agent任务成本为什么最多能降约45% · Agent Cost · Workflow Design：模型基础单价不变，任务成本仍然可能下降。关键不只在价格，而在任务拆解、上下文管理和执行链路的重新设计。" width="100%">
+      <source media="(max-width: 600px)" srcset="assets/article-cards/article-04-white-mobile-v4.svg">
+      <img src="assets/article-cards/article-04-white-v4.svg" alt="基础单价没降，Agent任务成本为什么最多能降约45% · Agent Cost · Workflow Design：模型基础单价不变，任务成本仍然可能下降。关键不只在价格，而在任务拆解、上下文管理和执行链路的重新设计。" width="100%">
     </picture>
   </a>
 </p>
@@ -109,8 +109,8 @@ I write about AI products through an engineering and product lens.
 <p>
   <a href="https://mp.weixin.qq.com/s/MUb2FaiS8fHlhU99ytRrEg">
     <picture>
-      <source media="(max-width: 600px)" srcset="assets/article-cards/article-05-white-mobile-v3.svg">
-      <img src="assets/article-cards/article-05-white-v3.svg" alt="Grok Bot最反常的设计，一队AI员工共用一台电脑 · Computer Use · Multi-Agent：一队 AI 员工共用一台电脑，看起来反常，却把协作、权限、界面和执行环境这些 Agent 产品问题放到了同一个桌面上。" width="100%">
+      <source media="(max-width: 600px)" srcset="assets/article-cards/article-05-white-mobile-v4.svg">
+      <img src="assets/article-cards/article-05-white-v4.svg" alt="Grok Bot最反常的设计，一队AI员工共用一台电脑 · Computer Use · Multi-Agent：一队 AI 员工共用一台电脑，看起来反常，却把协作、权限、界面和执行环境这些 Agent 产品问题放到了同一个桌面上。" width="100%">
     </picture>
   </a>
 </p>
@@ -118,8 +118,8 @@ I write about AI products through an engineering and product lens.
 <p>
   <a href="https://mp.weixin.qq.com/s/hfm_cyNzX1CWl0q0yaS3dw">
     <picture>
-      <source media="(max-width: 600px)" srcset="assets/article-cards/article-06-white-mobile-v3.svg">
-      <img src="assets/article-cards/article-06-white-v3.svg" alt="榜单第一离可用Agent还有多远，拆开MiniCPM5-2B的成绩单 · Evaluation · Agent Usability：榜单成绩回答的是模型在测试里表现如何，产品还要追问：它离真实可用、稳定交付和可控失败到底还有多远。" width="100%">
+      <source media="(max-width: 600px)" srcset="assets/article-cards/article-06-white-mobile-v4.svg">
+      <img src="assets/article-cards/article-06-white-v4.svg" alt="榜单第一离可用Agent还有多远，拆开MiniCPM5-2B的成绩单 · Evaluation · Agent Usability：榜单成绩回答的是模型在测试里表现如何，产品还要追问：它离真实可用、稳定交付和可控失败到底还有多远。" width="100%">
     </picture>
   </a>
 </p>
@@ -127,8 +127,8 @@ I write about AI products through an engineering and product lens.
 <p>
   <a href="https://mp.weixin.qq.com/s/HCUtDnsF9qYlFZ84eY2gvQ">
     <picture>
-      <source media="(max-width: 600px)" srcset="assets/article-cards/article-07-white-mobile-v3.svg">
-      <img src="assets/article-cards/article-07-white-v3.svg" alt="多数Agent测试超过V4 Pro，DeepSeek V4.1 Flash赢在模型还是脚手架 · Benchmark · Product System：当 Agent 测试结果超过预期，问题就不只是模型强不强，也要拆开看脚手架、工具链和评测方式贡献了多少。" width="100%">
+      <source media="(max-width: 600px)" srcset="assets/article-cards/article-07-white-mobile-v4.svg">
+      <img src="assets/article-cards/article-07-white-v4.svg" alt="多数Agent测试超过V4 Pro，DeepSeek V4.1 Flash赢在模型还是脚手架 · Benchmark · Product System：当 Agent 测试结果超过预期，问题就不只是模型强不强，也要拆开看脚手架、工具链和评测方式贡献了多少。" width="100%">
     </picture>
   </a>
 </p>
@@ -136,8 +136,8 @@ I write about AI products through an engineering and product lens.
 <p>
   <a href="https://mp.weixin.qq.com/s/oc6y7H90HRNO9cjHAzPcIw">
     <picture>
-      <source media="(max-width: 600px)" srcset="assets/article-cards/article-08-white-mobile-v3.svg">
-      <img src="assets/article-cards/article-08-white-v3.svg" alt="AI提高效率以后，轻松为什么没有分到你手里 · Productivity · Work Design：AI 提高效率之后，轻松不一定自动回到个人手里。真正的问题是效率收益如何被组织、流程和角色重新分配。" width="100%">
+      <source media="(max-width: 600px)" srcset="assets/article-cards/article-08-white-mobile-v4.svg">
+      <img src="assets/article-cards/article-08-white-v4.svg" alt="AI提高效率以后，轻松为什么没有分到你手里 · Productivity · Work Design：AI 提高效率之后，轻松不一定自动回到个人手里。真正的问题是效率收益如何被组织、流程和角色重新分配。" width="100%">
     </picture>
   </a>
 </p>
