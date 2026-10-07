@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="340" viewBox="0 0 960 340" role="img">
+<title>只言片语 ZhiYanPianYu</title><desc>从一句灵感，到 AI 视频片段。已验证真实 5 秒视频生成。</desc>
+<rect x="1" y="1" width="958" height="338" rx="12" fill="#ffffff" stroke="#d1d9e0"/>
+<g transform="translate(48 35) scale(.8421052632)">
+<rect width="76" height="76" rx="23" fill="#e5ddff"/>
+<g fill="none" stroke="#4b3676" stroke-width="3.8" stroke-linejoin="round" stroke-linecap="round">
+<rect x="19" y="29" width="38" height="28" rx="4"/>
+<path d="M19 29l-2-10 36-7 2 10-36 7zM26 18l7 8M39 15l7 8"/>
+</g><path d="M33 36l12 7-12 7z" fill="#4b3676"/>
+</g>
+<g font-family="-apple-system,PingFang SC,Arial,sans-serif">
+<text x="136" y="90" fill="#263c30" font-size="50" font-weight="600">只言片语 ZhiYanPianYu</text>
+<text x="48" y="148" fill="#5f7266" font-size="30">从一句灵感，到 AI 视频片段。</text>
+<text x="48" y="192" fill="#5f7266" font-size="25">Web · Next.js · FastAPI</text>
+<text x="48" y="292" fill="#1b6b4b" font-size="26">查看项目</text>
+</g><path d="M865 282 h36 l-10 -10 m10 10 -10 10" fill="none" stroke="#1b6b4b" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

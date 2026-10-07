@@ -41,6 +41,10 @@ Products and tools built through an AI product lens.
   <a href="https://github.com/Freya-Qian/AI-Avatar-Twin"><picture><source media="(max-width: 600px)" srcset="assets/project-cards/ai-avatar-twin-white-logo-mobile-v2.svg"><img src="assets/project-cards/ai-avatar-twin-white-logo-v2.svg" alt="AI Avatar Twin：从选题与脚本到数字人口播和素材包导出的工作台，含前后端源码与验证记录" width="48%"></picture></a>
 </p>
 
+<p>
+  <a href="https://github.com/Freya-Qian/ZhiYanPianYu"><picture><source media="(max-width: 600px)" srcset="assets/project-cards/zhiyanpianyu-white-logo-mobile-v1.svg"><img src="assets/project-cards/zhiyanpianyu-white-logo-v1.svg" alt="只言片语 ZhiYanPianYu：AI 短片创作工作台，已验证首帧与真实 5 秒视频生成，完整六阶段流程待验收" width="48%"></picture></a>
+</p>
+
 ---
 
 ## AI Skills
