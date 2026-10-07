@@ -2,8 +2,8 @@
 
 <a href="https://github.com/Freya-Qian">
   <picture>
-    <source media="(max-width: 600px)" srcset="assets/profile-ai-character-mobile-v7.svg">
-    <img src="assets/profile-ai-character-v7.svg" alt="Freya Qian · AI Product Manager · AI Builder · Writer：AI 角色、环绕信号与能力标签动态反馈" width="100%">
+    <source media="(max-width: 600px)" srcset="assets/profile-ai-character-mobile-v8.svg">
+    <img src="assets/profile-ai-character-v8.svg" alt="Freya Qian · AI Product Manager · AI Builder · Writer：AI 角色、环绕信号与能力标签动态反馈" width="100%">
   </picture>
 </a>
 
