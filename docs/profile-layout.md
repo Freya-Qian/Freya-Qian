@@ -24,8 +24,10 @@
 ## 只言片语主页入口（2026-10-08）
 
 - Yizhitu 选择 A：在主页“项目”区添加卡片，沿用现有已发布卡片样式，保留其他区块与入口。
-- 新入口为 `https://github.com/Freya-Qian/ZhiYanPianYu`，公开独立仓库；放在灵屿和数字人之后。
+- 新入口为 `https://github.com/Freya-Qian/ZhiYanPianYu`，公开独立仓库；最新位置为 Featured projects（核心项目）区，在 MotoViz 和 ProdForge AI 之后。
 - 卡片资源：`assets/project-cards/zhiyanpianyu-white-logo-v1.svg`、`zhiyanpianyu-white-logo-mobile-v1.svg`。桌面为960×340，移动端为320×214，README显示宽度48%，600px以下切换移动资源。
 - 卡片介绍：“从一句灵感，到 AI 视频片段。”保留项目已验证单片段生成、完整六阶段仍待验收的事实边界。
 - 本轮按实际主页使用白底卡片；旧主题约定不用于改变其他既有卡片。
 - 后续源码更新到只言片语独立仓库；主页仓库仅维护展示与链接。
+
+- 2026-10-08 后续指令覆盖此前普通项目位置：Yizhitu 指定只言片语进入核心项目区。保留卡片与链接，移除普通“项目”区的重复入口，其他卡片顺序不变。
