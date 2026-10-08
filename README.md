@@ -26,7 +26,11 @@ It is the lens for understanding systems, evaluating opportunities, and making b
 Products and tools built through an AI product lens.
 
 <p>
-  <a href="https://github.com/Freya-Qian/ProdForge-AI"><img src="assets/project-cards/prodforge-simple-v1.svg" alt="ProdForge AI project card" width="48%"></a>&nbsp;&nbsp;
+  <a href="https://github.com/Freya-Qian/Manxiang"><img src="assets/project-cards/manxiang-simple-v1.svg" alt="漫想 Manxiang：自由输入脑洞，生成对应场景与人物对白，通过选择或输入推进到结局" width="48%"></a>&nbsp;&nbsp;
+  <a href="https://github.com/Freya-Qian/ProdForge-AI"><img src="assets/project-cards/prodforge-simple-v1.svg" alt="ProdForge AI project card" width="48%"></a>
+</p>
+
+<p>
   <a href="https://github.com/Freya-Qian/ZhiYanPianYu"><img src="assets/project-cards/zhiyanpianyu-simple-v2.svg" alt="只言片语 ZhiYanPianYu：AI 短片创作工作台，已验证首帧与真实 5 秒视频生成，完整六阶段流程待验收" width="48%"></a>
 </p>
 
