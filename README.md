@@ -31,7 +31,7 @@ Products and tools built through an AI product lens.
 </p>
 
 <p>
-  <a href="https://github.com/Freya-Qian/ZhiYanPianYu-showcase"><img src="assets/project-cards/zhiyanpianyu-simple-v2.svg" alt="只言片语 ZhiYanPianYu：AI 短片创作工作台，已验证首帧与真实 5 秒视频生成，完整六阶段流程待验收" width="48%"></a>
+  <a href="https://github.com/Freya-Qian/ZhiYanPianYu-showcase"><img src="assets/project-cards/zhiyanpianyu-simple-v2.svg" alt="只言片语 ZhiYanPianYu：AI 短片创作工作台，已验证首帧与真实 5 秒视频生成" width="48%"></a>
 </p>
 
 ## 项目
