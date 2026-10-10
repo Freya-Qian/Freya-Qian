@@ -26,12 +26,12 @@ It is the lens for understanding systems, evaluating opportunities, and making b
 Products and tools built through an AI product lens.
 
 <p>
-  <a href="https://github.com/Freya-Qian/Manxiang"><img src="assets/project-cards/manxiang-simple-v1.svg" alt="漫想 Manxiang：自由输入脑洞，生成对应场景与人物对白，通过选择或输入推进到结局" width="48%"></a>&nbsp;&nbsp;
-  <a href="https://github.com/Freya-Qian/ProdForge-AI"><img src="assets/project-cards/prodforge-simple-v1.svg" alt="ProdForge AI project card" width="48%"></a>
+  <a href="https://github.com/Freya-Qian/Manxiang-showcase"><img src="assets/project-cards/manxiang-simple-v1.svg" alt="漫想 Manxiang：自由输入脑洞，生成对应场景与人物对白，通过选择或输入推进到结局" width="48%"></a>&nbsp;&nbsp;
+  <a href="https://github.com/Freya-Qian/ProdForge-AI-showcase"><img src="assets/project-cards/prodforge-simple-v1.svg" alt="ProdForge AI project card" width="48%"></a>
 </p>
 
 <p>
-  <a href="https://github.com/Freya-Qian/ZhiYanPianYu"><img src="assets/project-cards/zhiyanpianyu-simple-v2.svg" alt="只言片语 ZhiYanPianYu：AI 短片创作工作台，已验证首帧与真实 5 秒视频生成，完整六阶段流程待验收" width="48%"></a>
+  <a href="https://github.com/Freya-Qian/ZhiYanPianYu-showcase"><img src="assets/project-cards/zhiyanpianyu-simple-v2.svg" alt="只言片语 ZhiYanPianYu：AI 短片创作工作台，已验证首帧与真实 5 秒视频生成，完整六阶段流程待验收" width="48%"></a>
 </p>
 
 ## 项目
@@ -39,8 +39,8 @@ Products and tools built through an AI product lens.
 本地工具与独立探索，每个项目保留自己的内容和入口。
 
 <p>
-  <a href="https://github.com/Freya-Qian/Lingyu"><picture><source media="(max-width: 600px)" srcset="assets/project-cards/lingyu-white-logo-mobile-v2.svg"><img src="assets/project-cards/lingyu-white-logo-v2.svg" alt="灵屿 Lingyu：刘海屏桌面工作台项目卡片" width="48%"></picture></a>&nbsp;&nbsp;
-  <a href="https://github.com/Freya-Qian/AI-Avatar-Twin"><picture><source media="(max-width: 600px)" srcset="assets/project-cards/ai-avatar-twin-white-logo-mobile-v2.svg"><img src="assets/project-cards/ai-avatar-twin-white-logo-v2.svg" alt="AI Avatar Twin：从选题与脚本到数字人口播和素材包导出的工作台，含前后端源码与验证记录" width="48%"></picture></a>
+  <a href="https://github.com/Freya-Qian/Lingyu-showcase"><picture><source media="(max-width: 600px)" srcset="assets/project-cards/lingyu-white-logo-mobile-v2.svg"><img src="assets/project-cards/lingyu-white-logo-v2.svg" alt="灵屿 Lingyu：刘海屏桌面工作台项目卡片" width="48%"></picture></a>&nbsp;&nbsp;
+  <a href="https://github.com/Freya-Qian/AI-Avatar-Twin-showcase"><picture><source media="(max-width: 600px)" srcset="assets/project-cards/ai-avatar-twin-white-logo-mobile-v2.svg"><img src="assets/project-cards/ai-avatar-twin-white-logo-v2.svg" alt="AI Avatar Twin：从选题与脚本到数字人口播和素材包导出的工作台，含前后端源码与验证记录" width="48%"></picture></a>
 </p>
 
 <p>
